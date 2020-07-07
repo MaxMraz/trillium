@@ -1,0 +1,25 @@
+animation{
+  name = "fire",
+  src_image = "elements/fire.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}
+animation{
+  name = "fire_1",
+  src_image = "elements/fire.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}
+animation{
+  name = "fire_2",
+  src_image = "elements/fire.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}

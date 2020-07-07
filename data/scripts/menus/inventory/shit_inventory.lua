@@ -6,9 +6,7 @@ function menu:init(game)
 end
 
 local possible_items = {
-  "boomerang",
-  "boomerang",
-  "hookshot",
+  "flame_spell",
   "boomerang",
   "hookshot",
 }
@@ -24,6 +22,10 @@ local item_square = sol.surface.create(24, 24)
 item_square:fill_color{40,40,40}
 item_square:set_opacity(150)
 
+local equipped_item_1_sprite = sol.sprite.create("entities/items")
+equipped_item_1_sprite:set_animation"empty"
+local equipped_item_2_sprite = sol.sprite.create("entities/items")
+equipped_item_2_sprite:set_animation"empty"
 
 function menu:on_started()
   local game = sol.main.get_game()
@@ -40,15 +42,23 @@ function menu:on_started()
     end
   end
 
+  menu:update_equipped_item_sprites()
+
 end
 
-function menu:on_draw(dst)
-  for i, item_name in ipairs(held_items) do
-    item_square:draw(dst, i * 32, 140)
-    item_sprites[item_name]:draw(dst, i * 32 + 12, 156)
+
+function menu:update_equipped_item_sprites()
+  local game = sol.main.get_game()
+  if game:get_item_assigned(1) then
+    equipped_item_1_sprite:set_animation(game:get_item_assigned(1):get_name())
+    equipped_item_1_sprite:set_direction(game:get_item_assigned(1):get_variant() - 1)
   end
-  cursor_sprite:draw(dst, 12 + 32 * (cursor_index or 1), 170)
+  if game:get_item_assigned(2) then
+    equipped_item_2_sprite:set_animation(game:get_item_assigned(2):get_name())
+    equipped_item_2_sprite:set_direction(game:get_item_assigned(2):get_variant() - 1)
+  end
 end
+
 
 function menu:on_command_pressed(cmd)
   local game = sol.main.get_game()
@@ -63,8 +73,26 @@ function menu:on_command_pressed(cmd)
 
   elseif cmd == "item_1" then
     game:set_item_assigned(1, game:get_item(held_items[cursor_index]))
+    menu:update_equipped_item_sprites()
+
+  elseif cmd == "item_2" then
+    game:set_item_assigned(2, game:get_item(held_items[cursor_index]))
+    menu:update_equipped_item_sprites()
 
   end
+end
+
+
+
+
+function menu:on_draw(dst)
+  for i, item_name in ipairs(held_items) do
+    item_square:draw(dst, i * 32, 140)
+    item_sprites[item_name]:draw(dst, i * 32 + 12, 156)
+  end
+  cursor_sprite:draw(dst, 12 + 32 * (cursor_index or 1), 170)
+  equipped_item_1_sprite:draw(dst, 200, 20)
+  equipped_item_2_sprite:draw(dst, 224, 20)
 end
 
 

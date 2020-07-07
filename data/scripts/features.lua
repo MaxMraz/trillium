@@ -8,6 +8,8 @@
 require"scripts/hud/hud"
 require"scripts/menus/dialog_box"
 require"scripts/meta/camera"
+require"scripts/meta/game"
+require"scripts/meta/hero"
 require"scripts/meta/map"
 
 return true

@@ -168,6 +168,13 @@ chest{
   sprite = "chests/chest",
 }
 
+pickable{
+  layer = 0,
+  x = 88,
+  y = 221,
+  treasure_name = "flame_spell",
+}
+
 tile{
   layer = 1,
   x = 40,

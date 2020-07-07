@@ -6,6 +6,7 @@ tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 
 sprite{ id = "chests/chest", description = "Chest" }
 sprite{ id = "chests/chest_big", description = "Chest-Big" }
+sprite{ id = "elements/fire", description = "Fire" }
 sprite{ id = "enemies/chameleon", description = "Chameleon" }
 sprite{ id = "enemies/clucko", description = "Clucko white" }
 sprite{ id = "enemies/crow", description = "Crow" }
@@ -139,6 +140,8 @@ sound{ id = "money_counter", description = "money_counter" }
 sound{ id = "money_counter_end", description = "money_counter_end" }
 sound{ id = "monster_hurt", description = "zora" }
 sound{ id = "mouse", description = "mouse" }
+sound{ id = "oh_lotsa_damage", description = "oh_lotsa_damage" }
+sound{ id = "ohko", description = "ohko" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "open_lock", description = "open_lock" }
 sound{ id = "pause_closed", description = "pause_closed" }
@@ -196,6 +199,7 @@ sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
 item{ id = "boomerang", description = "Boomerang" }
+item{ id = "flame_spell", description = "Flame Spell" }
 item{ id = "hookshot", description = "Hookshot" }
 
 enemy{ id = "chameleon", description = "Chameleon" }
@@ -217,6 +221,7 @@ enemy{ id = "slime_red", description = "Slime (red)" }
 enemy{ id = "slime_yellow", description = "Slime (yellow)" }
 enemy{ id = "slimy_green", description = "Slimy Green" }
 
+entity{ id = "elements/flame", description = "Flame" }
 
 language{ id = "en", description = "English" }
 
@@ -245,8 +250,10 @@ file{ path = "enemies/slime_purple.lua", author = "Diarandor", license = "GPL v3
 file{ path = "enemies/slime_red.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "enemies/slime_yellow.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "enemies/slimy_green.lua", author = "Diarandor", license = "GPL v3" }
+file{ path = "entities/elements/flame.lua", author = "Max Mraz", }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
+file{ path = "items/flame_spell.lua", author = "Max Mraz", }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }

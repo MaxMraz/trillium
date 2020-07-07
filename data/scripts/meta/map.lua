@@ -58,7 +58,7 @@ function map_meta:create_fire(props)
   local map = self
   local fire = map:create_custom_entity{
     x = props.x, y = props.y, layer = props.layer, width = 16, height = 16, direction = 0,
-    sprite = "entities/fire", model = "fire"
+    model = "elements/flame", 
   }
   return fire
 end
