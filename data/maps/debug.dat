@@ -1,0 +1,27 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "grass_light",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 200,
+  y = 189,
+  direction = 1,
+}
+
