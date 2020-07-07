@@ -21,6 +21,9 @@ function game_manager:create(file)
     initial_game:initialize_new_savegame(game)
   end
 
+  require("scripts/fx/lighting_effects"):initialize()
+  require("scripts/button_inputs"):initialize(game)
+
   return game
 end
 

@@ -1,5 +1,6 @@
 map{ id = "debug", description = "debug" }
 
+tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 
@@ -43,6 +44,10 @@ sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
+sprite{ id = "entities/effects/light_l", description = "Light - L" }
+sprite{ id = "entities/effects/light_m", description = "Light M" }
+sprite{ id = "entities/effects/light_s", description = "Light - M" }
+sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -141,6 +146,7 @@ sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_money", description = "picked_money" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
 sound{ id = "quake", description = "quake" }
+sound{ id = "roll_2", description = "roll_2" }
 sound{ id = "running", description = "running" }
 sound{ id = "running_obstacle", description = "running_obstacle" }
 sound{ id = "shield", description = "shield" }
@@ -450,6 +456,14 @@ file{ path = "sprites/entities/bomb.dat", author = "Max Mraz", license = "CC-BY-
 file{ path = "sprites/entities/bomb.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/boomerang.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/dust_cloud_roll.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_l.dat", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_l.png", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_m.dat", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_m.png", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_s.dat", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_s.png", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_xl.dat", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/light_xl.png", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/explosion_4.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/fountain v1.1.ase", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/items.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }

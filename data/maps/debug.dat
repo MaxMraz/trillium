@@ -17,11 +17,178 @@ tile{
   pattern = "grass_light",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = "5",
+  tileset = "grass_green_large",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 112,
+  width = 160,
+  height = 96,
+  pattern = "1",
+  tileset = "grass_green_large",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 16,
+  width = 48,
+  height = 48,
+  pattern = "2_2",
+  tileset = "grass_green_large",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 32,
+  width = 48,
+  height = 48,
+  pattern = "157",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "155",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 104,
+  width = 32,
+  height = 32,
+  pattern = "155",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 136,
+  width = 32,
+  height = 24,
+  pattern = "158",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 16,
+  width = 32,
+  height = 24,
+  pattern = "158",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 40,
+  width = 48,
+  height = 48,
+  pattern = "157",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "155",
+}
+
 destination{
   name = "destination",
   layer = 0,
   x = 200,
   y = 189,
   direction = 1,
+}
+
+npc{
+  name = "target",
+  layer = 0,
+  x = 296,
+  y = 101,
+  direction = 3,
+  subtype = 1,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = -32,
+  width = 80,
+  height = 80,
+  pattern = "156",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 16,
+  width = 64,
+  height = 56,
+  pattern = "149",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 64,
+  width = 64,
+  height = 56,
+  pattern = "149",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 104,
+  width = 48,
+  height = 40,
+  pattern = "159",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = -16,
+  width = 48,
+  height = 40,
+  pattern = "159",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = -24,
+  width = 80,
+  height = 80,
+  pattern = "156",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 168,
+  width = 64,
+  height = 56,
+  pattern = "149",
 }
 
