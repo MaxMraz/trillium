@@ -49,6 +49,7 @@ sprite{ id = "entities/effects/light_m", description = "Light M" }
 sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
@@ -194,6 +195,8 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "boomerang", description = "Boomerang" }
+item{ id = "hookshot", description = "Hookshot" }
 
 enemy{ id = "chameleon", description = "Chameleon" }
 enemy{ id = "explosion", description = "Explosion" }

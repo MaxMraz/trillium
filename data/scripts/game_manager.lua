@@ -23,6 +23,7 @@ function game_manager:create(file)
 
   require("scripts/fx/lighting_effects"):initialize()
   require("scripts/button_inputs"):initialize(game)
+  require("scripts/menus/inventory/shit_inventory"):init(game)
 
   return game
 end

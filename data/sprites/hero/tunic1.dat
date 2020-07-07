@@ -158,6 +158,16 @@ animation{
   },
 }
 animation{
+  name = "hookshot",
+  src_image = "hero/caspian.png",
+  directions = {
+    { x = 272, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 288, y = 576, frame_width = 16, frame_height = 32, origin_x = 9, origin_y = 29 },
+    { x = 304, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 320, y = 576, frame_width = 16, frame_height = 32, origin_x = 7, origin_y = 29 },
+  },
+}
+animation{
   name = "hurt",
   src_image = "hero/caspian.png",
   directions = {

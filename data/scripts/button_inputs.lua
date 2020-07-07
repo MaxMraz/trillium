@@ -3,6 +3,9 @@ local dash_manager = require("scripts/action/dash_manager")
 
 local menu = {}
 
+local can_dash = true
+
+
 function menu:initialize(game)
   --Debug Mode Toggle:
   local debug_mode = true
@@ -27,8 +30,39 @@ function menu:initialize(game)
     game:set_command_keyboard_binding("right", "d")
     game:set_command_keyboard_binding("pause", "f")
   end
+  --Run that function in game:on_started
   game:register_event("on_started", controls)
 
+
+  --Command Presses
+  function game:on_command_pressed(action)
+    local handled = false
+    local ignoring_obstacles
+    local hero = game:get_hero()
+
+    --Roll / Dash
+    if action == "action" then
+      local effect = game:get_command_effect("action")
+      local hero_state = hero:get_state()
+      local dx = {[0] = 8, [1] = 0, [2] = -8, [3] = 0}
+      local dy = {[0] = 0, [1] = -8, [2] = 0, [3] = 8}
+      local direction = hero:get_direction()
+      local has_space = not hero:test_obstacles(dx[direction], dy[direction])
+      if  effect == nil and hero_state == "free" and hero:get_controlling_stream() == nil
+      and not game:is_suspended() and can_dash and has_space then
+        dash_manager:dash(game)
+        can_dash = false
+        sol.timer.start(game, 500, function() can_dash = true end)
+      end
+
+    end 
+
+    return handled
+  end
+
+
+
+  --Key Presses
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
 
@@ -69,40 +103,10 @@ function menu:initialize(game)
         game:get_map():exit_helicopter_cam()
         require("scripts/action/hole_drop_landing"):play_landing_animation()
       end
-
-         --end of debug functions
           --]]
-
     end
-
   end
 
-
-  local can_dash = true
-  function game:on_command_pressed(action)
-    local handled = false
-
-  --Roll / Dash
-  local ignoring_obstacles
-  local hero = game:get_hero()
-    if action == "action" then
-      local effect = game:get_command_effect("action")
-      local hero_state = hero:get_state()
-      local dx = {[0] = 8, [1] = 0, [2] = -8, [3] = 0}
-      local dy = {[0] = 0, [1] = -8, [2] = 0, [3] = 8}
-      local direction = hero:get_direction()
-      local has_space = not hero:test_obstacles(dx[direction], dy[direction])
-      if  effect == nil and hero_state == "free" and hero:get_controlling_stream() == nil
-      and not game:is_suspended() and can_dash and has_space then
-        dash_manager:dash(game)
-        can_dash = false
-        sol.timer.start(game, 500, function() can_dash = true end)
-      end
-
-    end 
-
-    return handled
-  end
 
   function game:on_joypad_button_pressed(btn)
     local handled = false
