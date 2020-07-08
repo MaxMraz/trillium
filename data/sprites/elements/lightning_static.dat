@@ -1,0 +1,12 @@
+animation{
+  name = "static",
+  src_image = "elements/electric.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 40, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 18, num_columns = 9 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 18, num_columns = 9 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 18, num_columns = 9 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 18, num_columns = 9 },
+  },
+}

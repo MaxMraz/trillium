@@ -114,31 +114,22 @@ tile{
 destination{
   name = "destination",
   layer = 0,
-  x = 200,
-  y = 189,
+  x = 168,
+  y = 221,
   direction = 1,
-}
-
-wall{
-  layer = 0,
-  x = 64,
-  y = 0,
-  width = 304,
-  height = 56,
-  stops_enemies = true,
 }
 
 pickable{
   layer = 0,
   x = 112,
-  y = 189,
+  y = 221,
   treasure_name = "boomerang",
 }
 
 pickable{
   layer = 0,
   x = 88,
-  y = 189,
+  y = 221,
   treasure_name = "hookshot",
 }
 
@@ -160,17 +151,9 @@ block{
   pullable = false,
 }
 
-chest{
-  layer = 0,
-  x = 344,
-  y = 101,
-  treasure_name = "boomerang",
-  sprite = "chests/chest",
-}
-
 pickable{
   layer = 0,
-  x = 88,
+  x = 136,
   y = 221,
   treasure_name = "flame_spell",
 }

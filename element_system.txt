@@ -1,0 +1,15 @@
+Element System
+
+Fire:
+Fire is a short-lived entity that will damage the hero and can have a couple effects when colliding with another entity.
+
+If the other entity has a method `entity:react_to_fire()`, that method will be called.
+
+Otherwise, if `other_entity.can_burn` is true, or if `other_entity:get_property("can_burn")` is true, then the other entity will be destoryed after a moment and more fire will spread from that point.
+
+Requires several map methods to be defined:
+`map:create_fire(props)` takes a table with x, y, and layer and creates and returns the fire entity
+`map:propagate_fire(x,y,z)` creates more fire at this position and spreads it out.
+
+
+

@@ -1,0 +1,11 @@
+animation{
+  name = "zap",
+  src_image = "elements/electric.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 10 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 10 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 10 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 10 },
+  },
+}
