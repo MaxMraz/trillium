@@ -149,39 +149,21 @@ destination{
 pickable{
   layer = 0,
   x = 104,
-  y = 221,
+  y = 253,
   treasure_name = "boomerang",
 }
 
 pickable{
   layer = 0,
   x = 80,
-  y = 221,
+  y = 253,
   treasure_name = "hookshot",
-}
-
-block{
-  layer = 0,
-  x = 104,
-  y = 85,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-}
-
-block{
-  layer = 0,
-  x = 88,
-  y = 93,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
 }
 
 pickable{
   layer = 0,
   x = 128,
-  y = 221,
+  y = 253,
   treasure_name = "flame_spell",
 }
 
@@ -194,24 +176,8 @@ pickable{
 
 custom_entity{
   layer = 0,
-  x = 248,
-  y = 101,
-  properties = {
-    {
-      key = "can_conduct_electricity",
-      value = "true",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/crystal",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 149,
+  x = 32,
+  y = 253,
   width = 16,
   height = 16,
   direction = 0,
@@ -250,6 +216,28 @@ custom_entity{
   layer = 0,
   x = 88,
   y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "switches/lightning_switch",
+  model = "elements/lightning_switch",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "blocks/conductive_block",
+  model = "conductive_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 109,
   width = 16,
   height = 16,
   direction = 0,

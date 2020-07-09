@@ -19,12 +19,13 @@ function entity:on_created()
   end
 
   entity:add_collision_test("sprite", function(entity, other_entity)
-    if other_entity.react_to_lightning and not map.lightning_affected_entities[other_entity] then
+    if map.lightning_affected_entities[other_entity] then return end
+    if other_entity.react_to_lightning then
       other_entity:react_to_lightning(entity)
     end
     --only check this once per entity
     map.lightning_affected_entities[other_entity] = true
-    sol.timer.start(map, 600, function() map.lightning_affected_entities.other_entity = false end)
+    sol.timer.start(map, 500, function() map.lightning_affected_entities.other_entity = false end)
   end)
 
 
@@ -50,17 +51,18 @@ function entity:on_created()
         table.insert(new_static.electrified_entities, e)
       end
     end
-    return true --repeat timer
+    return entity.source_entity --repeat timer
   end)
 
 end
 
 
 function entity:set_source(source_entity)
+  if source_entity == "none" then source_entity = nil end
   entity.source_entity = source_entity
 
   --If no source
-  if source_entity == "none" then
+  if not source_entity then
     sol.timer.start(entity, 1000, function()
       for _, e in pairs(entity.electrified_entities) do
         e.electrified = false

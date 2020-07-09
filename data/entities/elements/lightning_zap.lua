@@ -17,7 +17,7 @@ function entity:on_created()
   --Interact with other entities
   if not map.lightning_affected_entities then map.lightning_affected_entities = {} end
 
-  entity:add_collision_test("sprite", function(entity, other_entity, entity_sprite, other_entity_sprite)
+  entity:add_collision_test("sprite", function(entity, other_entity)
     -- print(other_entity, "electrified:", other_entity.electrified, "tabled:", map.lightning_affected_entities[other_entity])
 
     --React to Lightning
@@ -26,8 +26,7 @@ function entity:on_created()
     end
 
     --Conductive Entities
-    if not map.lightning_affected_entities[other_entity]
-    and (not other_entity.electrified)
+    if (not other_entity.electrified)
     and (other_entity.can_conduct_electricity or other_entity:get_property("can_conduct_electricity") ) then
       sol.timer.start(entity, 20, function()
         local x, y, z = other_entity:get_position()
