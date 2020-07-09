@@ -111,6 +111,33 @@ tile{
   pattern = "155",
 }
 
+tile{
+  layer = 0,
+  x = 248,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "97_3",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "101_4",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "101_6",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -121,14 +148,14 @@ destination{
 
 pickable{
   layer = 0,
-  x = 112,
+  x = 104,
   y = 221,
   treasure_name = "boomerang",
 }
 
 pickable{
   layer = 0,
-  x = 88,
+  x = 80,
   y = 221,
   treasure_name = "hookshot",
 }
@@ -153,9 +180,81 @@ block{
 
 pickable{
   layer = 0,
-  x = 136,
+  x = 128,
   y = 221,
   treasure_name = "flame_spell",
+}
+
+pickable{
+  layer = 0,
+  x = 136,
+  y = 237,
+  treasure_name = "spark_spell",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 101,
+  properties = {
+    {
+      key = "can_conduct_electricity",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/crystal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "elements/battery_orb",
+  model = "elements/battery_orb",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 141,
+  properties = {
+    {
+      key = "can_conduct_electricity",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/crystal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "blocks/conductive_block",
+  model = "conductive_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "switches/lightning_switch",
+  model = "elements/lightning_switch",
 }
 
 tile{
@@ -220,5 +319,14 @@ tile{
   width = 64,
   height = 56,
   pattern = "149",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "99_4",
 }
 

@@ -4,14 +4,16 @@ tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 
+sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "chests/chest", description = "Chest" }
 sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
+sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
-sprite{ id = "elements/lightning_arrow_pop" }
+sprite{ id = "elements/lightning_arrow_pop", description = "Lightning Arrow Pop" }
 sprite{ id = "elements/lightning_ball_small", description = "Lightning Ball Small" }
 sprite{ id = "elements/lightning_static", description = "Lightning Static" }
-sprite{ id = "elements/lightning_zap" }
+sprite{ id = "elements/lightning_zap", description = "Lightning Zap" }
 sprite{ id = "enemies/chameleon", description = "Chameleon" }
 sprite{ id = "enemies/clucko", description = "Clucko white" }
 sprite{ id = "enemies/crow", description = "Crow" }
@@ -80,6 +82,7 @@ sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "shadows/shadow_big", description = "Big shadow" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "Big dynamic shadow" }
 sprite{ id = "shadows/shadow_small", description = "Small shadow" }
+sprite{ id = "switches/lightning_switch", description = "Lightning Switch" }
 sprite{ id = "switches/switch_plate", description = "Switch-Plate" }
 
 
@@ -228,7 +231,14 @@ enemy{ id = "slime_red", description = "Slime (red)" }
 enemy{ id = "slime_yellow", description = "Slime (yellow)" }
 enemy{ id = "slimy_green", description = "Slimy Green" }
 
+entity{ id = "conductive_block", description = "Conductive Block" }
+entity{ id = "elements/battery_orb", description = "Battery Orb" }
 entity{ id = "elements/flame", description = "Flame" }
+entity{ id = "elements/lightning_ball_small", description = "lightning ball small" }
+entity{ id = "elements/lightning_static", description = "LightningStatic" }
+entity{ id = "elements/lightning_switch", description = "Lightning Switch" }
+entity{ id = "elements/lightning_zap", description = "Lightning Zap" }
+entity{ id = "toss_ball", description = "Toss Ball" }
 
 language{ id = "en", description = "English" }
 
@@ -257,7 +267,13 @@ file{ path = "enemies/slime_purple.lua", author = "Diarandor", license = "GPL v3
 file{ path = "enemies/slime_red.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "enemies/slime_yellow.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "enemies/slimy_green.lua", author = "Diarandor", license = "GPL v3" }
+file{ path = "entities/conductive_block.lua", author = "Max Mraz", }
+file{ path = "entities/elements/battery_orb.lua", author = "Max Mraz", }
 file{ path = "entities/elements/flame.lua", author = "Max Mraz", }
+file{ path = "entities/elements/lightning_ball_small.lua", author = "Max Mraz", }
+file{ path = "entities/elements/lightning_static.lua", author = "Max Mraz", }
+file{ path = "entities/elements/lightning_switch.lua", author = "Max Mraz", }
+file{ path = "entities/elements/lightning_zap.lua", author = "Max Mraz", }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
 file{ path = "items/flame_spell.lua", author = "Max Mraz", }
@@ -415,9 +431,12 @@ file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
+file{ path = "sprites/elements/battery_orb.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/electric.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/elements/lightning_arrow_pop.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/lightning_ball_small.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/lightning_static.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/elements/lightning_zap.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies/chameleon.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies/chameleon.png", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -567,6 +586,7 @@ file{ path = "sprites/shadows/shadow_big_dynamic.dat", author = "Diarandor", lic
 file{ path = "sprites/shadows/shadow_small.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/streams", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
+file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/teletransporters", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }

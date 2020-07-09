@@ -7,6 +7,7 @@ end
 
 local possible_items = {
   "flame_spell",
+  "spark_spell",
   "boomerang",
   "hookshot",
 }

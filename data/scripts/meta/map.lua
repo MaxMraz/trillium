@@ -122,29 +122,6 @@ end
 
 
 
-------Fire------
-function map_meta:create_fire(props)
-  --props: name, x, y, layer, enabled_at_start, properties
-  local map = self
-  local fire = map:create_custom_entity{
-    x = props.x, y = props.y, layer = props.layer, width = 16, height = 16, direction = 0,
-    model = "elements/flame", 
-  }
-  return fire
-end
-
-function map_meta:propagate_fire(x, y, z)
-  local num_flames = 8
-  for i=1, num_flames do
-    local flame = self:create_fire{x=x, y=y, layer=z}
-    local m = sol.movement.create"straight"
-    m:set_max_distance(10)
-    m:set_angle(2* math.pi / num_flames * i)
-    m:start(flame)
-  end
-end
-
-
 
 --==================DEBUG===================--
 --Take camera control for filming for trailers

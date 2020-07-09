@@ -11,5 +11,6 @@ require"scripts/meta/camera"
 require"scripts/meta/game"
 require"scripts/meta/hero"
 require"scripts/meta/map"
+require"scripts/meta/map_elemental_effects"
 
 return true
