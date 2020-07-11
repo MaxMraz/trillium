@@ -1,0 +1,43 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "grass_green_large",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "blocks/conductive_block_2",
+  model = "conductive_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "switches/lightning_switch",
+  model = "elements/lightning_switch",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "elements/battery_orb",
+  model = "elements/battery_orb",
+}
+

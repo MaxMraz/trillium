@@ -12,11 +12,12 @@ function map_meta:create_fire(props)
 end
 
 function map_meta:propagate_fire(x, y, z)
-  local num_flames = 8
+  local num_flames = 6
   for i=1, num_flames do
     local flame = self:create_fire{x=x, y=y, layer=z}
     local m = sol.movement.create"straight"
-    m:set_max_distance(10)
+    m:set_max_distance(16)
+    m:set_ignore_obstacles()
     m:set_angle(2* math.pi / num_flames * i)
     m:start(flame)
   end

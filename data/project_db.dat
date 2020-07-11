@@ -1,3 +1,5 @@
+map{ id = ".templates/entities" }
+map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
@@ -5,8 +7,11 @@ tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
+sprite{ id = "blocks/conductive_block_2", description = "Conductive Block" }
 sprite{ id = "chests/chest", description = "Chest" }
 sprite{ id = "chests/chest_big", description = "Chest-Big" }
+sprite{ id = "destructibles/bush", description = "Bush" }
+sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
@@ -428,6 +433,8 @@ file{ path = "sprites/chests/chest.dat", author = "Max Mraz", license = "CC-BY-S
 file{ path = "sprites/chests/chest.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/chests/chest_big.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
+file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/destructibles/bush_brambles.dat", author = "Max Mraz", license = "CC-BA-SA 4.0" }
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }

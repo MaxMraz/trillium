@@ -21,6 +21,12 @@ function initial_game:initialize_new_savegame(game)
   game:set_max_money(100)
   game:set_ability("lift", 1)
   game:set_ability("sword", 1)
+
+
+  --temporary stuff for testing:
+  game:get_item("flame_spell"):set_variant(1)
+  game:set_item_assigned(1, game:get_item("flame_spell"))
+
 end
 
 return initial_game

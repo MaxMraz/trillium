@@ -162,8 +162,8 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 128,
-  y = 253,
+  x = 112,
+  y = 237,
   treasure_name = "flame_spell",
 }
 
@@ -174,75 +174,59 @@ pickable{
   treasure_name = "spark_spell",
 }
 
-custom_entity{
+destructible{
   layer = 0,
-  x = 32,
-  y = 253,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "elements/battery_orb",
-  model = "elements/battery_orb",
+  x = 208,
+  y = 149,
+  properties = {
+    {
+      key = "can_burn",
+      value = "true",
+    },
+  },
+  sprite = "destructibles/bush",
+}
+
+destructible{
+  layer = 0,
+  x = 224,
+  y = 165,
+  properties = {
+    {
+      key = "can_burn",
+      value = "true",
+    },
+  },
+  sprite = "destructibles/bush",
 }
 
 custom_entity{
   layer = 0,
-  x = 344,
-  y = 141,
+  x = 136,
+  y = 157,
   properties = {
     {
-      key = "can_conduct_electricity",
+      key = "can_burn",
       value = "true",
     },
   },
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/crystal",
+  sprite = "destructibles/bush",
 }
 
-custom_entity{
+destructible{
   layer = 0,
-  x = 120,
-  y = 133,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "blocks/conductive_block",
-  model = "conductive_block",
-}
-
-custom_entity{
-  layer = 0,
-  x = 88,
-  y = 133,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "switches/lightning_switch",
-  model = "elements/lightning_switch",
-}
-
-custom_entity{
-  layer = 0,
-  x = 144,
-  y = 133,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "blocks/conductive_block",
-  model = "conductive_block",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 109,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "switches/lightning_switch",
-  model = "elements/lightning_switch",
+  x = 104,
+  y = 165,
+  properties = {
+    {
+      key = "can_burn",
+      value = "true",
+    },
+  },
+  sprite = "destructibles/bush",
 }
 
 tile{
