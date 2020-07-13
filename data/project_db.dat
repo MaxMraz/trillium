@@ -5,12 +5,14 @@ map{ id = "debug", description = "debug" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
+tileset{ id = "oceanset_trees", description = "Trees" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "blocks/conductive_block_2", description = "Conductive Block" }
 sprite{ id = "chests/chest", description = "Chest" }
 sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "destructibles/bush", description = "Bush" }
+sprite{ id = "destructibles/bush2", description = "bush2" }
 sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
@@ -65,6 +67,10 @@ sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/shadow", description = "Shadow" }
+sprite{ id = "foliage/generic" }
+sprite{ id = "foliage/grass_seed_short", description = "Grass Seed Short" }
+sprite{ id = "foliage/nettle_short", description = "Nettle-Short" }
+sprite{ id = "foliage/sprig", description = "sprig" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
 sprite{ id = "ground_effects/leaves", description = "Leaves" }
@@ -243,6 +249,7 @@ entity{ id = "elements/lightning_ball_small", description = "lightning ball smal
 entity{ id = "elements/lightning_static", description = "LightningStatic" }
 entity{ id = "elements/lightning_switch", description = "Lightning Switch" }
 entity{ id = "elements/lightning_zap", description = "Lightning Zap" }
+entity{ id = "foliage", description = "Foliage" }
 entity{ id = "toss_ball", description = "Toss Ball" }
 
 language{ id = "en", description = "English" }
@@ -279,6 +286,7 @@ file{ path = "entities/elements/lightning_ball_small.lua", author = "Max Mraz", 
 file{ path = "entities/elements/lightning_static.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_switch.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_zap.lua", author = "Max Mraz", }
+file{ path = "entities/foliage.lua", author = "Max Mraz", }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
 file{ path = "items/flame_spell.lua", author = "Max Mraz", }
@@ -434,6 +442,7 @@ file{ path = "sprites/chests/chest.png", author = "Max Mraz", license = "CC-BY-S
 file{ path = "sprites/chests/chest_big.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/destructibles/bush2.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush_brambles.dat", author = "Max Mraz", license = "CC-BA-SA 4.0" }
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
@@ -519,6 +528,9 @@ file{ path = "sprites/entities/items.dat", author = "Max Mraz", license = "CC BY
 file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/nettle_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/sprig.dat", author = "Max Mraz", }
 file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -600,3 +612,5 @@ file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC 
 file{ path = "tilesets/oceanset_inside.tiles.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_outside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_outside.tiles.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
+file{ path = "tilesets/oceanset_trees.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/oceanset_trees.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }

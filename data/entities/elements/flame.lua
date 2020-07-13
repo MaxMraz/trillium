@@ -23,8 +23,6 @@ function entity:on_created()
 
   entity:add_collision_test("sprite", function(entity, other_entity, fire_sprite, other_entity_sprite)
     if map.burned_entities[other_entity] then return end
-print(other_entity:get_type(), "-burned table:", map.burned_entities[other_entity], "-can burn:", other_entity:get_property("can_burn"))
-
 
     if other_entity.react_to_fire and not map.burned_entities[other_entity] then
       other_entity:react_to_fire(entity)

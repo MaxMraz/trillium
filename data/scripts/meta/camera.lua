@@ -8,6 +8,7 @@ function camera_meta:shake(config, callback)
   local shaking_count_max = config ~= nil and config.count or 9
   local amplitude = config ~= nil and config.amplitude or 4
   local speed = config ~= nil and config.speed or 60
+  local zoom_amount = config ~= nil and config.zoom_factor or 1.05
 
   local camera = self
   local map = camera:get_map()
@@ -60,7 +61,6 @@ function camera_meta:shake(config, callback)
   local camera_surface = camera:get_surface()
   local cam_wid, cam_hig = camera:get_size()
   camera_surface:set_transformation_origin(cam_wid / 2, cam_hig / 2)
-  local zoom_amount = config.zoom_factor or 1.05
   local dx = {[1] = 1, [0] = zoom_amount}
   local dy = {[1] = 1, [0] = zoom_amount}
   local i = 1

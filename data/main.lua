@@ -61,6 +61,7 @@ function sol.main:on_key_pressed(key, modifiers)
     (key == "return" and (modifiers.alt or modifiers.control)) then
     -- F11 or Ctrl + return or Alt + Return: switch fullscreen.
     sol.video.set_fullscreen(not sol.video.is_fullscreen())
+    sol.video.set_cursor_visible(not sol.video.is_fullscreen())
     handled = true
   elseif key == "f4" and modifiers.alt then
     -- Alt + F4: stop the program.
