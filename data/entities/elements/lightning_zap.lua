@@ -9,6 +9,13 @@ function entity:on_created()
 
   --Animate, then burn out
   sprite = entity:create_sprite("elements/lightning_zap")
+
+  --Check if created in water- make a big zap if so
+  local ground = map:get_ground(entity:get_position())
+  if ground == "deep_water" or ground == "shallow_water" then
+    local big_sprite = entity:create_sprite("elements/lightning_zap_big")
+  end
+
   sprite:set_animation("zap", function() entity:remove() end)
   sol.timer.start(entity, 1000, function()
     entity:remove()

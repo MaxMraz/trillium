@@ -13,6 +13,8 @@ function entity:on_created()
   entity:set_follow_streams(true)
   entity:set_size(16, 16)
 
+  entity:set_can_traverse_ground("shallow_water", true)
+
   sol.timer.start(entity, 500, function()
     entity:check_for_conductive_entities()
     return true

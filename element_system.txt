@@ -7,9 +7,22 @@ If the other entity has a method `entity:react_to_fire()`, that method will be c
 
 Otherwise, if `other_entity.can_burn` is true, or if `other_entity:get_property("can_burn")` is true, then the other entity will be destoryed after a moment and more fire will spread from that point.
 
-Requires several map methods to be defined:
-`map:create_fire(props)` takes a table with x, y, and layer and creates and returns the fire entity
-`map:propagate_fire(x,y,z)` creates more fire at this position and spreads it out.
+
+
+
+Lightning:
+There are several different types of lightning enemies. Entities can react to lightning by defining entity:react_to_lightning(), and can act as conductive to electricity by setting entity.can_conduct_electricity = true, or entity:set_property("can_conduct_electricity", true)
+
+lightning_ball_small is a projectile that will create a lightning_zap when it collides with something
+
+lightning_zap is a short-lived entity that will damage the hero, call react_to_lightning() on any entities that define it and collide with the zap, and will create lightning_static on conductive entities.
+
+lightning_static is an entity that will call react_to_lightning() on any entities that touch it, and will propogate itself to nearby conductive entities. It will last as long as its source, if any, exists nearby to it. A source is, for example, a battery_orb. lightning_static created from lightning_zap has no source, and will shortly fizzle out after being created.
+
+battery_orb is an entity that can be pushed around, which acts as a source for lightning_static in conductive entities. By setting it next to or within a conductive entity, it will cause lightning_static to build up within the entity. Pushing it away or destroying it somehow will cause the electricity to stop.
+
+conductive_blocks are pushable block entities that can conduct electricity. Once block type entities are reliably registered by "sprite" collision tests, it would be better to use a block entity and set a can_conduct_electricity property to true.
+
 
 
 

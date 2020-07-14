@@ -10,6 +10,7 @@ local power_entities = {
 }
 
 function entity:on_created()
+  entity.can_conduct_electricity = true
   sprite = entity:get_sprite()
   entity:set_size(16, 16)
   entity:set_drawn_in_y_order(true)

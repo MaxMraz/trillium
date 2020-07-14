@@ -1,0 +1,8 @@
+animation{
+  name = "leafs",
+  src_image = "foliage/leaf_burst.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 8 },
+  },
+}

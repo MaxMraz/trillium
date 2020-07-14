@@ -1,0 +1,9 @@
+animation{
+  name = "stopped",
+  src_image = "foliage/foliage.png",
+  frame_delay = 320,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 72, frame_width = 8, frame_height = 24, origin_x = 4, origin_y = 21, num_frames = 4 },
+  },
+}

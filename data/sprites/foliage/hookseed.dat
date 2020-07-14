@@ -1,0 +1,15 @@
+animation{
+  name = "growing",
+  src_image = "foliage/hookseed.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 9 },
+  },
+}
+animation{
+  name = "grown",
+  src_image = "foliage/hookseed.png",
+  directions = {
+    { x = 128, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}

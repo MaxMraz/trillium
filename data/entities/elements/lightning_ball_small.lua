@@ -7,6 +7,11 @@ function entity:on_created()
   entity:set_size(16,16)
   entity:set_drawn_in_y_order(true)
   entity:set_follow_streams(false)
+  entity:set_can_traverse_ground("hole", true)
+  entity:set_can_traverse_ground("shallow_water", true)
+  entity:set_can_traverse_ground("deep_water", true)
+  entity:set_can_traverse_ground("lava", true)
+  entity:set_can_traverse_ground("low_wall", true)
 
   sprite = entity:create_sprite("elements/lightning_ball_small")
 

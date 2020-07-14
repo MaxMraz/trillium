@@ -26,6 +26,8 @@ function initial_game:initialize_new_savegame(game)
   --temporary stuff for testing:
   game:get_item("flame_spell"):set_variant(1)
   game:set_item_assigned(1, game:get_item("flame_spell"))
+  game:get_item("spark_spell"):set_variant(1)
+  game:set_item_assigned(2, game:get_item("spark_spell"))
 
 end
 

@@ -2,7 +2,7 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 local sprite
-local CONDUCTIVE_DISTANCE = 24
+local conductive_distance = 24
 
 function entity:on_created()
   entity:set_size(16,16)
@@ -41,7 +41,7 @@ function entity:on_created()
   --Jump to nearby conductive entities
   sol.timer.start(entity, 200, function()
     local x, y, z = entity:get_position()
-    local CD = CONDUCTIVE_DISTANCE
+    local CD = conductive_distance
     for e in map:get_entities_in_rectangle(x - CD, y - CD, CD*2, CD*2) do
       if not e.electrified
       and (e.can_conduct_electricity or e:get_property("can_conduct_electricity")) then
@@ -72,7 +72,7 @@ function entity:set_source(source_entity)
 
   else
     sol.timer.start(entity, 500, function()
-      if entity:get_distance(source_entity) > CONDUCTIVE_DISTANCE then
+      if entity:get_distance(source_entity) > conductive_distance then
         for _, e in pairs(entity.electrified_entities) do
           e.electrified = false
         end
@@ -85,4 +85,5 @@ function entity:set_source(source_entity)
   end
 
 end
+
 
