@@ -6,20 +6,6 @@ animation{
   },
 }
 animation{
-  name = "bombs_counter",
-  src_image = "entities/items.png",
-  directions = {
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-  },
-}
-animation{
-  name = "boomerang",
-  src_image = "entities/items.png",
-  directions = {
-    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-  },
-}
-animation{
   name = "empty",
   src_image = "hero/caspian.png",
   directions = {
@@ -30,28 +16,49 @@ animation{
   },
 }
 animation{
-  name = "flame_spell",
+  name = "inventory/bombs_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/boomerang",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/feather",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/flame_spell",
   src_image = "entities/items.png",
   directions = {
     { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
-  name = "hookseed_satchel",
+  name = "inventory/hookseed_satchel",
   src_image = "entities/items.png",
   directions = {
     { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
-  name = "hookshot",
+  name = "inventory/hookshot",
   src_image = "entities/items.png",
   directions = {
     { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
-  name = "spark_spell",
+  name = "inventory/spark_spell",
   src_image = "entities/items.png",
   directions = {
     { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },

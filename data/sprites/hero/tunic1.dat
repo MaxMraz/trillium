@@ -181,10 +181,22 @@ animation{
   name = "jumping",
   src_image = "hero/caspian.png",
   directions = {
-    { x = 192, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
-    { x = 208, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
-    { x = 224, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
-    { x = 240, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 192, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 37 },
+    { x = 208, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 37 },
+    { x = 224, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 37 },
+    { x = 240, y = 576, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 37 },
+  },
+}
+animation{
+  name = "jumping_2",
+  src_image = "hero/caspian.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 1008, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 41, num_frames = 7 },
+    { x = 224, y = 976, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 41, num_frames = 6 },
+    { x = 112, y = 1040, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 41, num_frames = 7 },
+    { x = 112, y = 976, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 41, num_frames = 6 },
   },
 }
 animation{

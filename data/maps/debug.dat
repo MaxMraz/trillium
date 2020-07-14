@@ -247,15 +247,6 @@ tile{
 
 tile{
   layer = 0,
-  x = -72,
-  y = 216,
-  width = 64,
-  height = 72,
-  pattern = "grass_light",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 256,
   width = 16,
@@ -317,40 +308,21 @@ tile{
   pattern = "grass_dark",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 192,
+  width = 96,
+  height = 48,
+  pattern = "hole",
+}
+
 destination{
   name = "destination",
   layer = 0,
   x = 168,
   y = 221,
   direction = 1,
-}
-
-pickable{
-  layer = 0,
-  x = 32,
-  y = 229,
-  treasure_name = "boomerang",
-}
-
-pickable{
-  layer = 0,
-  x = 8,
-  y = 229,
-  treasure_name = "hookshot",
-}
-
-pickable{
-  layer = 0,
-  x = -40,
-  y = 237,
-  treasure_name = "flame_spell",
-}
-
-pickable{
-  layer = 0,
-  x = -16,
-  y = 237,
-  treasure_name = "spark_spell",
 }
 
 destructible{
@@ -1821,20 +1793,6 @@ custom_entity{
   direction = 0,
   sprite = "foliage/grass_seed_short",
   model = "foliage",
-}
-
-pickable{
-  layer = 0,
-  x = 32,
-  y = 205,
-  treasure_name = "hookseed_satchel",
-}
-
-pickable{
-  layer = 0,
-  x = 8,
-  y = 205,
-  treasure_name = "bombs_counter",
 }
 
 tile{
