@@ -11,6 +11,7 @@ local possible_items = {
   "hookseed_satchel",
   "boomerang",
   "hookshot",
+  "bombs_counter",
 }
 
 local held_items = {} --will look same as possible_items table, minus unobtained items

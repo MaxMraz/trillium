@@ -13,7 +13,7 @@ tile{
   x = 0,
   y = 0,
   width = 416,
-  height = 480,
+  height = 240,
   pattern = "grass_light",
 }
 
@@ -32,7 +32,7 @@ tile{
   x = 0,
   y = 0,
   width = 640,
-  height = 480,
+  height = 240,
   pattern = "5",
   tileset = "grass_green_large",
 }
@@ -658,50 +658,6 @@ custom_entity{
   layer = 0,
   x = 248,
   y = 45,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/sprig",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 229,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/sprig",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/sprig",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 229,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/sprig",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 237,
   width = 16,
   height = 16,
   direction = 0,
@@ -1371,83 +1327,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 272,
-  y = 205,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 213,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 205,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 213,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 213,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 208,
   y = 149,
   width = 8,
@@ -1592,78 +1471,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 264,
-  y = 205,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 205,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 213,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 248,
-  y = 213,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 221,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 229,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 160,
   y = 197,
   width = 8,
@@ -1786,54 +1593,6 @@ custom_entity{
   layer = 0,
   x = 368,
   y = 189,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 376,
-  y = 197,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 408,
-  y = 205,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 352,
-  y = 229,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 360,
-  y = 237,
   width = 8,
   height = 16,
   origin_x = 4,
@@ -2008,105 +1767,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 392,
-  y = 205,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 416,
-  y = 213,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 400,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 408,
-  y = 229,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 400,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 384,
-  y = 229,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 376,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 392,
-  y = 245,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 416,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 416,
   y = 149,
   width = 16,
@@ -2165,9 +1825,16 @@ custom_entity{
 
 pickable{
   layer = 0,
-  x = 24,
+  x = 32,
   y = 205,
   treasure_name = "hookseed_satchel",
+}
+
+pickable{
+  layer = 0,
+  x = 8,
+  y = 205,
+  treasure_name = "bombs_counter",
 }
 
 tile{

@@ -225,6 +225,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "bombs_counter", description = "Bombs" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "flame_spell", description = "Flame Spell" }
 item{ id = "hookseed_satchel", description = "Hookseed Satchel" }
@@ -252,6 +253,7 @@ enemy{ id = "slime_yellow", description = "Slime (yellow)" }
 enemy{ id = "slimy_green", description = "Slimy Green" }
 
 entity{ id = "conductive_block", description = "Conductive Block" }
+entity{ id = "custom_bomb", description = "custom_bomb" }
 entity{ id = "elements/battery_orb", description = "Battery Orb" }
 entity{ id = "elements/flame", description = "Flame" }
 entity{ id = "elements/lightning_ball_small", description = "lightning ball small" }
@@ -260,6 +262,8 @@ entity{ id = "elements/lightning_switch", description = "Lightning Switch" }
 entity{ id = "elements/lightning_zap", description = "Lightning Zap" }
 entity{ id = "foliage", description = "Foliage" }
 entity{ id = "hookseed", description = "Hookseed Plant" }
+entity{ id = "moving_platform", description = "Moving Platform" }
+entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
 entity{ id = "toss_ball", description = "Toss Ball" }
 
 language{ id = "en", description = "English" }
