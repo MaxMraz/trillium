@@ -85,6 +85,30 @@ animation{
   },
 }
 animation{
+  name = "climbing",
+  src_image = "hero/caspian.png",
+  frame_delay = 160,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 1152, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 112, y = 1088, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 112, y = 1152, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 112, y = 1120, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "climbing_stopped",
+  src_image = "hero/caspian.png",
+  frame_delay = 160,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 1152, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 112, y = 1152, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 112, y = 1152, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 112, y = 1152, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
   name = "dash",
   src_image = "hero/caspian.png",
   frame_delay = 70,

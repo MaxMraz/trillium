@@ -308,15 +308,6 @@ tile{
   pattern = "grass_dark",
 }
 
-tile{
-  layer = 0,
-  x = 208,
-  y = 192,
-  width = 96,
-  height = 48,
-  pattern = "hole",
-}
-
 destination{
   name = "destination",
   layer = 0,

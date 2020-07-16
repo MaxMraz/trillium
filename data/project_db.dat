@@ -1,5 +1,6 @@
 map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
+map{ id = "climbing" }
 map{ id = "debug", description = "debug" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
@@ -252,6 +253,7 @@ enemy{ id = "slime_red", description = "Slime (red)" }
 enemy{ id = "slime_yellow", description = "Slime (yellow)" }
 enemy{ id = "slimy_green", description = "Slimy Green" }
 
+entity{ id = "climbing_wall", description = "Climbing Wall" }
 entity{ id = "conductive_block", description = "Conductive Block" }
 entity{ id = "custom_bomb", description = "custom_bomb" }
 entity{ id = "elements/battery_orb", description = "Battery Orb" }
@@ -293,6 +295,7 @@ file{ path = "enemies/slime_purple.lua", author = "Diarandor", license = "GPL v3
 file{ path = "enemies/slime_red.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "enemies/slime_yellow.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "enemies/slimy_green.lua", author = "Diarandor", license = "GPL v3" }
+file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
 file{ path = "entities/conductive_block.lua", author = "Max Mraz", }
 file{ path = "entities/elements/battery_orb.lua", author = "Max Mraz", }
 file{ path = "entities/elements/flame.lua", author = "Max Mraz", }

@@ -1,0 +1,1122 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "grass_light_1",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 224,
+  height = 80,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 224,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 224,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 80,
+  width = 192,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 112,
+  width = 192,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 64,
+  width = 192,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = -16,
+  width = 16,
+  height = 32,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 24,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 120,
+  width = 64,
+  height = 32,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 144,
+  width = 64,
+  height = 24,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "97_3",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "98_3",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "101_4",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "101_8",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_12",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_11",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_10",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 128,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_10",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_14",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 208,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_10",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_15",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_14",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_12",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_8",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_8",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_8",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 160,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_15",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_11",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_10",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_8",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_12",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_11",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "grass_detail_13",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 32,
+  height = 112,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 48,
+  width = 32,
+  height = 48,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 32,
+  width = 32,
+  height = 32,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 64,
+  width = 16,
+  height = 64,
+  pattern = "17",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 64,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 64,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley_dark",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/barley",
+  model = "foliage",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 264,
+  y = 173,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 29,
+  width = 32,
+  height = 112,
+  direction = 0,
+  model = "climbing_wall",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 61,
+  width = 32,
+  height = 48,
+  direction = 0,
+  model = "climbing_wall",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 61,
+  width = 32,
+  height = 32,
+  direction = 0,
+  model = "climbing_wall",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "climbing_wall",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 45,
+  width = 32,
+  height = 32,
+  direction = 0,
+  model = "climbing_wall",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 77,
+  width = 16,
+  height = 64,
+  direction = 0,
+  model = "climbing_wall",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 8,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = -24,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = -8,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = -40,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 104,
+  width = 64,
+  height = 16,
+  pattern = "103",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 120,
+  width = 64,
+  height = 24,
+  pattern = "105",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 168,
+  width = 32,
+  height = 16,
+  pattern = "99_4",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "100_3",
+}
+
