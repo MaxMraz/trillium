@@ -9,7 +9,6 @@ tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
-sprite{ id = "blocks/conductive_block_2", description = "Conductive Block" }
 sprite{ id = "chests/chest", description = "Chest" }
 sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "destructibles/bush", description = "Bush" }
@@ -70,6 +69,7 @@ sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "foliage/barley", description = "Barley" }
 sprite{ id = "foliage/barley_dark", description = "Barley-Dark" }
@@ -232,6 +232,7 @@ item{ id = "inventory/feather", description = "feather" }
 item{ id = "inventory/flame_spell", description = "Flame Spell" }
 item{ id = "inventory/hookseed_satchel", description = "Hookseed Satchel" }
 item{ id = "inventory/hookshot", description = "Hookshot" }
+item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 
 enemy{ id = "chameleon", description = "Chameleon" }
@@ -314,6 +315,7 @@ file{ path = "items/inventory/flame_spell.lua", author = "Max Mraz", }
 file{ path = "items/inventory/hookseed_satchel.lua", author = "Max Mraz", }
 file{ path = "items/inventory/hookshot.lua", author = "Christopho, Mehdi Khelifi", license = "GPL v3" }
 file{ path = "items/inventory/library/hookshot_config.lua", author = "Christopho, , Mehdi Khelifi", license = "GPL v3" }
+file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }

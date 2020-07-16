@@ -12,6 +12,7 @@ function entity:on_created()
     sprite:set_frame(math.random(1, sprite:get_num_frames() - 1))
   end
   entity:set_drawn_in_y_order()
+  entity:set_traversable_by(true)
 
 
     entity:add_collision_test("overlapping", function(entity, other_entity)

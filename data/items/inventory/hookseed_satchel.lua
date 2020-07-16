@@ -13,6 +13,11 @@ item:register_event("on_using", function(self)
   local hero = game:get_hero()
   local x, y, z = hero:get_position()
   local direction = hero:get_direction()
+  if hero:test_obstacles(game:dx(16)[direction], game:dy(16)[direction]) then
+    sol.audio.play_sound"wrong"
+    item:set_finished()
+    return
+  end
   x = x + game:dx(16)[direction]
   y = y + game:dy(16)[direction]
   local width, height = 8, 8

@@ -1,5 +1,3 @@
---This will be obviated once the bug where block type entities aren't recognized by "sprite" collision tests
-
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
@@ -12,6 +10,7 @@ function entity:on_created()
   entity:set_traversable_by(false)
   entity:set_follow_streams(true)
   entity:set_size(16, 16)
+  entity:set_weight(0)
 
   sol.timer.start(entity, 100, function()
 --print(entity.electrified)
@@ -32,6 +31,7 @@ function entity:on_position_changed(x,y,z)
   end
 end
 
+--[[
 function entity:on_interaction()
   local direction = map:get_hero():get_direction()
   local m = sol.movement.create"straight"
@@ -40,3 +40,29 @@ function entity:on_interaction()
   m:set_smooth(false)
   m:start(entity)
 end
+--]]
+
+entity:register_event("on_lifting", function(entity, carrier, carried_object)
+  carried_object:set_destruction_sound("running_obstacle")
+
+  --landing, and therefore needing to create a new toss_ball
+  function carried_object:on_breaking()
+    local x, y, layer = carried_object:get_position()
+    local width, height = carried_object:get_size()
+    local sprite = carried_object:get_sprite()
+    local direction = sprite:get_direction()
+
+    if carried_object:get_ground_below() == "wall" then y = y + 16 end
+    local new_object = carried_object:get_map():create_custom_entity({
+      width = width, height = height, x = x, y = y, layer = layer,
+      direction = direction, model = "conductive_block", sprite = sprite:get_animation_set()
+    })
+
+    --For compatibility with the metal_block_cane item
+    if game:get_item"inventory/metal_block_cane" then
+      game:get_item("inventory/metal_block_cane").created_block = new_object
+    end
+
+  end
+
+end)

@@ -58,6 +58,13 @@ animation{
   },
 }
 animation{
+  name = "inventory/metal_block_cane",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "inventory/spark_spell",
   src_image = "entities/items.png",
   directions = {

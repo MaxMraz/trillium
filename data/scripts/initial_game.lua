@@ -31,6 +31,7 @@ function initial_game:initialize_new_savegame(game)
   game:get_item("inventory/boomerang"):set_variant(1)
   game:get_item("inventory/bombs_counter"):set_variant(1)
   game:get_item("inventory/feather"):set_variant(1)
+  game:get_item("inventory/metal_block_cane"):set_variant(1)
   game:set_item_assigned(1, game:get_item("inventory/flame_spell"))
   game:set_item_assigned(2, game:get_item("inventory/feather"))
 

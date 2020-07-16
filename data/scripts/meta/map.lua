@@ -113,11 +113,13 @@ end
 -----Make a poof--------
 function map_meta:create_poof(x, y, layer)
   local map = self
-  map:create_custom_entity({
-    model = "ephemeral_effect",
+  local poof = map:create_custom_entity({
     x = x, y = y+3, layer = layer, direction = 0, height = 16, width = 16,
     sprite = "entities/poof"
   })
+  poof:set_drawn_in_y_order(true)
+  local sprite = poof:get_sprite()
+  sol.timer.start(poof, sprite:get_num_frames() * sprite:get_frame_delay(), function() poof:remove() end)
 end
 
 

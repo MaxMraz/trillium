@@ -247,53 +247,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 240,
+  x = 232,
+  y = 184,
   width = 16,
   height = 16,
   pattern = "grass_dark",
@@ -1191,105 +1146,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 248,
-  y = 165,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 173,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 181,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 189,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 173,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 181,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
-  y = 181,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 189,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
-  y = 197,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 208,
   y = 149,
   width = 8,
@@ -1410,30 +1266,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 248,
-  y = 197,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 197,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 160,
   y = 197,
   width = 8,
@@ -1448,18 +1280,6 @@ custom_entity{
   layer = 0,
   x = 168,
   y = 189,
-  width = 8,
-  height = 16,
-  origin_x = 4,
-  direction = 0,
-  sprite = "foliage/grass_seed_short",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 197,
   width = 8,
   height = 16,
   origin_x = 4,

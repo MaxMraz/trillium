@@ -13,6 +13,7 @@ local possible_items = {
   "inventory/hookshot",
   "inventory/bombs_counter",
   "inventory/feather",
+  "inventory/metal_block_cane",
 
 }
 
