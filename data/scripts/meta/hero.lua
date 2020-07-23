@@ -47,7 +47,7 @@ function hero_meta:on_taking_damage(damage)
 end
 
 
-function hero_meta:on_state_changed(state)
+hero_meta:register_event("on_state_changed", function(self, state)
   local hero = self
   local game = sol.main.get_game()
 
@@ -117,7 +117,7 @@ function hero_meta:on_state_changed(state)
     }
 
   end
-end
+end)
 
 function hero_meta:become_all_powerful()
   local game = self:get_game()

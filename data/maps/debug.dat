@@ -1652,18 +1652,6 @@ custom_entity{
   model = "foliage",
 }
 
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 205,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/nettle_short",
-  tiled = true,
-  model = "foliage",
-}
-
 tile{
   layer = 1,
   x = 144,

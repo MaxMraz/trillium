@@ -7,7 +7,7 @@
 
 require"scripts/multi_events"
 
-
+require"scripts/action/swim_manager"
 require"scripts/hud/hud"
 require"scripts/menus/dialog_box"
 require"scripts/meta/bush"

@@ -102,6 +102,7 @@ sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
 sprite{ id = "hud/heart", description = "Heart" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
+sprite{ id = "hud/swim_meter", description = "Swim Meter Blob" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -649,6 +650,7 @@ file{ path = "sprites/hud/interact_icon.png", author = "Max Mraz", license = "CC
 file{ path = "sprites/hud/magic_bar.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/magic_bar.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/magic_bar_background.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/hud/swim_meter.dat", author = "Max Mraz", license = "CC-BY 4.0" }
 file{ path = "sprites/items", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
