@@ -5,6 +5,7 @@ local map = entity:get_map()
 local state = require("scripts/action/climb_manager"):get_state()
 
 function entity:on_created()
+  entity:set_visible(false)
   local hero = map:get_hero()
   if not map.climbing_walls then map.climbing_walls = {} end
 

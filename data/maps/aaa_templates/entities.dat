@@ -15,7 +15,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "blocks/conductive_block_2",
+  sprite = "blocks/conductive_block",
   model = "conductive_block",
 }
 
@@ -39,5 +39,28 @@ custom_entity{
   direction = 0,
   sprite = "elements/battery_orb",
   model = "elements/battery_orb",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 61,
+  width = 24,
+  height = 40,
+  direction = 0,
+  sprite = "utility/climbing_wall",
+  tiled = true,
+  model = "climbing_wall",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/nettle_short",
+  model = "foliage",
 }
 

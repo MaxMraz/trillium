@@ -1594,7 +1594,7 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "climbing",
+  destination_map = "tests",
   sprite = "switches/switch_plate",
 }
 
@@ -1649,6 +1649,18 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "foliage/fern_big",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/nettle_short",
+  tiled = true,
   model = "foliage",
 }
 

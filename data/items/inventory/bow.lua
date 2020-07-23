@@ -7,10 +7,10 @@ function item:on_started()
 end
 
 function item:on_using(props)
-  local arrow_type = props.arrow_type
+  local arrow_type = (props and props.arrow_type) or nil
   local map = item:get_map()
   local hero = map:get_hero()
-  local slot_assigned = props.slot_assigned or (game:get_item_assigned(1) == item and 1 or 2)
+  local slot_assigned = (props and props.slot_assigned) or (game:get_item_assigned(1) == item and 1 or 2)
 
   hero:set_animation("bow_draw", function()
     hero:set_animation"bow_drawn"

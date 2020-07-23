@@ -2,6 +2,7 @@ map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "climbing" }
 map{ id = "debug", description = "debug" }
+map{ id = "tests" }
 map{ id = "water" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
@@ -10,6 +11,7 @@ tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
+sprite{ id = "blocks/cracked_block", description = "cracked block" }
 sprite{ id = "chests/chest", description = "Chest" }
 sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "destructibles/bush", description = "Bush" }
@@ -109,6 +111,7 @@ sprite{ id = "shadows/shadow_big_dynamic", description = "Big dynamic shadow" }
 sprite{ id = "shadows/shadow_small", description = "Small shadow" }
 sprite{ id = "switches/lightning_switch", description = "Lightning Switch" }
 sprite{ id = "switches/switch_plate", description = "Switch-Plate" }
+sprite{ id = "utility/climbing_wall", description = "climbing_wall" }
 
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
@@ -485,6 +488,7 @@ file{ path = "sounds/wrong.ogg", author = "Diarandor", license = "CC BY-SA 4.0" 
 file{ path = "sounds/wrong2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/wrong3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/animals", license = "CC BY-SA 4.0" }
+file{ path = "sprites/blocks/cracked_block.dat", author = "Max Mraz", }
 file{ path = "sprites/chests", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/chest.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/chests/chest.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }

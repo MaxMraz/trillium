@@ -65,9 +65,11 @@ end
 
 function entity:create_effect()
   if entity.type == "fire" then
+    local dir = entity:get_direction()
     local x, y, z = entity:get_position()
-    map:create_fire{x=x, y=y, layer=z}
+    map:create_fire{x=x+game:dx(8)[dir], y=y+game:dy(8)[dir], layer=z}
     entity:get_sprite():set_color_modulation{50,50,50}
+    entity:remove()
 
   elseif entity.type == "ice" then
     map:create_ice_sparkle(entity:get_position())
@@ -84,3 +86,37 @@ function entity:create_effect()
 
   end
 end
+
+
+entity:add_collision_test("sprite", function(entity, other_entity, sprite, other_sprite)
+  --TODO hurt enemies
+end)
+
+
+entity:add_collision_test("overlapping", function(entity, other_entity)
+  local type = other_entity:get_type()
+  if type == "crystal" then
+    entity:get_movement():on_obstacle_reached()
+    sol.audio.play_sound("switch")
+    map:change_crystal_state()
+    entity:clear_collision_tests()
+
+  elseif type == "switch" and not other_entity:is_walkable() then
+    entity:get_movement():on_obstacle_reached()
+    local switch = other_entity
+    if not switch:is_activated() then
+      sol.audio.play_sound("switch")
+      switch:set_activated(true)
+      switch:on_activated()
+    else
+      sol.audio.play_sound("switch")
+      switch:set_activated(false)
+      if switch.on_inactivated then switch:on_inactivated() end
+    end
+    entity:clear_collision_tests()
+
+  end
+
+end)
+
+
