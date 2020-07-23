@@ -14,7 +14,12 @@ local possible_items = {
   "inventory/bombs_counter",
   "inventory/feather",
   "inventory/metal_block_cane",
-
+  "inventory/frostseed_satchel",
+  "inventory/bow",
+  "inventory/bow_fire",
+  "inventory/bow_ice",
+  "inventory/bow_electric",
+  "inventory/bow_bomb",
 }
 
 local held_items = {} --will look same as possible_items table, minus unobtained items
@@ -90,13 +95,14 @@ end
 
 
 
-
+--local SPACING = 32
+local SPACING = 24
 function menu:on_draw(dst)
   for i, item_name in ipairs(held_items) do
-    item_square:draw(dst, i * 32, 140)
-    item_sprites[item_name]:draw(dst, i * 32 + 12, 156)
+    item_square:draw(dst, i * SPACING, 140)
+    item_sprites[item_name]:draw(dst, i * SPACING + 12, 156)
   end
-  cursor_sprite:draw(dst, 12 + 32 * (cursor_index or 1), 170)
+  cursor_sprite:draw(dst, 8 + SPACING * (cursor_index or 1), 170)
   equipped_item_1_sprite:draw(dst, 200, 20)
   equipped_item_2_sprite:draw(dst, 224, 20)
 end

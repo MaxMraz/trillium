@@ -169,8 +169,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 304,
-  y = 160,
+  x = 312,
+  y = 128,
   width = 32,
   height = 24,
   pattern = "7",
@@ -243,24 +243,6 @@ tile{
   height = 24,
   pattern = "7",
   tileset = "oceanset_trees",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "grass_dark",
 }
 
 destination{
@@ -1230,7 +1212,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 296,
+  x = 280,
   y = 109,
   width = 8,
   height = 16,
@@ -1242,7 +1224,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 312,
+  x = 296,
   y = 117,
   width = 8,
   height = 16,
@@ -1254,7 +1236,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 304,
+  x = 288,
   y = 117,
   width = 8,
   height = 16,
@@ -1606,6 +1588,70 @@ custom_entity{
   model = "foliage",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "climbing",
+  sprite = "switches/switch_plate",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "water",
+  sprite = "switches/switch_plate",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/fern_big",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/fern_big",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/fern_big",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/fern_big",
+  model = "foliage",
+}
+
 tile{
   layer = 1,
   x = 144,
@@ -1658,8 +1704,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 288,
-  y = 152,
+  x = 296,
+  y = 120,
   width = 64,
   height = 48,
   pattern = "1",
@@ -1736,8 +1782,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 288,
-  y = 112,
+  x = 296,
+  y = 80,
   width = 64,
   height = 56,
   pattern = "4",

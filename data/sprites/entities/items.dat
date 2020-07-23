@@ -30,6 +30,41 @@ animation{
   },
 }
 animation{
+  name = "inventory/bow",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/bow_bomb",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 64, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/bow_electric",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/bow_fire",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/bow_ice",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "inventory/feather",
   src_image = "entities/items.png",
   directions = {
@@ -41,6 +76,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "inventory/frostseed_satchel",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 64, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

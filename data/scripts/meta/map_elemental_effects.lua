@@ -26,19 +26,11 @@ end
 function map_meta:propagate_fire(x, y, z)
   local map = self
   local DIST = 22
---[[
-  for e in map:get_entities_in_rectangle(x - DIST, y - DIST, DIST * 2, DIST * 2) do
-    if e.can_burn or e:get_property("can_burn") then
-      local ex, ey, ez = e:get_position()
-      map:create_fire{x=ex, y=ey, layer=ez}
-    end
-  end
---]]
   for e in map:get_entities() do
     local DIST = 22
     if e:get_distance(x, y) <= DIST and (e.can_burn or e:get_property("can_burn") ) then
       local ex, ey, ez = e:get_position()
-      sol.timer.start(map, 800, function()
+      sol.timer.start(map, map.fire_propagation_delay or 750, function()
         map:create_fire{x=ex, y=ey, layer=ez}
       end)
     end
@@ -64,4 +56,24 @@ function map_meta:create_lightning_static(props)
   }
   lightning:set_source(props.source or "none")
   return lightning
+end
+
+
+
+----Ice-----------------------
+function map_meta:create_ice_sparkle(x,y,z)
+  local map = self
+  local sparkle = map:create_custom_entity{
+    x=x, y=y, layer=z, direction=0, width=32, height=32,
+    model = "elements/ice_sparkle",
+  }
+  sparkle:set_origin(16, 16)
+end
+
+function map_meta:create_ice_platform(x,y,z)
+  local map = self
+  local platform = map:create_custom_entity{
+    x=x, y=y, layer=z, direction=0, width=32, height=32,
+    model = "elements/ice_platform",
+  }
 end

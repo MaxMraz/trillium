@@ -20,7 +20,9 @@ function entity:on_created()
         entity.shaking = true
         sound_manager:play_sound("walk_on_grass")
         if sprite:has_animation"shaking" then
-          sprite:set_animation("shaking", "stopped")
+          sprite:set_animation("shaking", function()
+            sprite:set_animation("shaking", "stopped")
+          end)
         end
         sol.timer.start(entity, 200, function()
           if entity:get_distance(other_entity) < 24 then
