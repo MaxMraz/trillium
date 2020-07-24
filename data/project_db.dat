@@ -20,6 +20,7 @@ sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
+sprite{ id = "elements/ice_block", description = "Ice Block" }
 sprite{ id = "elements/ice_platform", description = "Ice Platform" }
 sprite{ id = "elements/ice_sparkle", description = "Ice Sparkle" }
 sprite{ id = "elements/lightning_arrow_pop", description = "Lightning Arrow Pop" }
@@ -277,6 +278,7 @@ entity{ id = "conductive_block", description = "Conductive Block" }
 entity{ id = "custom_bomb", description = "custom_bomb" }
 entity{ id = "elements/battery_orb", description = "Battery Orb" }
 entity{ id = "elements/flame", description = "Flame" }
+entity{ id = "elements/ice_block", description = "Ice Block" }
 entity{ id = "elements/ice_platform", description = "Ice Platform" }
 entity{ id = "elements/ice_sparkle", description = "Ice Sparkle" }
 entity{ id = "elements/lightning_ball_small", description = "lightning ball small" }
@@ -320,6 +322,7 @@ file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
 file{ path = "entities/conductive_block.lua", author = "Max Mraz", }
 file{ path = "entities/elements/battery_orb.lua", author = "Max Mraz", }
 file{ path = "entities/elements/flame.lua", author = "Max Mraz", }
+file{ path = "entities/elements/ice_block.lua", author = "Max Mraz", }
 file{ path = "entities/elements/ice_platform.lua", author = "Max Mraz", }
 file{ path = "entities/elements/ice_sparkle.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_ball_small.lua", author = "Max Mraz", }
@@ -503,6 +506,7 @@ file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", licens
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/elements/battery_orb.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/electric.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/elements/ice_block.dat", author = "Max Mraz", }
 file{ path = "sprites/elements/ice_platform.dat", author = "Max Mraz", license = "CC-BY 4.0" }
 file{ path = "sprites/elements/ice_sparkle.dat", author = "Max Mraz", license = "CC-BY 4.0" }
 file{ path = "sprites/elements/lightning_arrow_pop.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }

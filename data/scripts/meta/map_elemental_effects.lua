@@ -68,6 +68,7 @@ function map_meta:create_ice_sparkle(x,y,z)
     model = "elements/ice_sparkle",
   }
   sparkle:set_origin(16, 16)
+  return sparkle
 end
 
 function map_meta:create_ice_platform(x,y,z)
@@ -76,4 +77,15 @@ function map_meta:create_ice_platform(x,y,z)
     x=x, y=y, layer=z, direction=0, width=32, height=32,
     model = "elements/ice_platform",
   }
+  return platform
+end
+
+function map_meta:create_ice_block(x, y, z)
+  local map = self
+  local block = map:create_custom_entity{
+    x=x, y=y, layer=z, direction=0, width=16, height=16,
+    sprite = "elements/ice_block",
+    model = "elements/ice_block",
+  }
+  return block
 end

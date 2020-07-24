@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "elements/ice.png",
+  directions = {
+    { x = 32, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 32, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 32, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 32, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}

@@ -15,6 +15,9 @@ function entity:on_created()
 
   if entity:get_ground_below() == "shallow_water" or entity:get_ground_below() == "deep_water" then
     map:create_ice_platform(entity:get_position())
+
+  elseif entity:get_ground_below() == "traversable" or entity:get_ground_below() == "grass" then
+    map:create_ice_block(entity:get_position())
   end
 
 end
