@@ -162,6 +162,28 @@ animation{
   },
 }
 animation{
+  name = "drowning_lava",
+  src_image = "hero/caspian.png",
+  frame_delay = 100,
+  directions = {
+    { x = 272, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 12, num_columns = 6 },
+    { x = 272, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 12, num_columns = 6 },
+    { x = 272, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 12, num_columns = 6 },
+    { x = 272, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 12, num_columns = 6 },
+  },
+}
+animation{
+  name = "drowning_water",
+  src_image = "hero/caspian.png",
+  frame_delay = 100,
+  directions = {
+    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
+    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
+    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
+    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
+  },
+}
+animation{
   name = "dying",
   src_image = "hero/caspian.png",
   frame_delay = 125,
@@ -315,10 +337,10 @@ animation{
   src_image = "hero/caspian.png",
   frame_delay = 100,
   directions = {
-    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
-    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
-    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
-    { x = 176, y = 624, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 16, num_columns = 6 },
+    { x = 240, y = 752, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 304, y = 752, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 240, y = 776, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 304, y = 776, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
   },
 }
 animation{

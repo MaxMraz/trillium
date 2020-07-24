@@ -14,3 +14,10 @@ animation{
     { x = 32, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
   },
 }
+animation{
+  name = "shadow",
+  src_image = "hud/swim_meter.png",
+  directions = {
+    { x = 40, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}

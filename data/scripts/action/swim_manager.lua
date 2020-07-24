@@ -1,4 +1,8 @@
 --System for imposing a limit on swimming. As player continues to swim, hero oxygen goes down. At 0, player drowns.
+--Make sure to have an icon to be depleted in sprites/hud/swim_meter, set its origin to 0,0
+--Also, you'll need an animation called "drowning_water"
+--To use this, just require the in features.lua or elsewhere
+
 require"scripts/multi_events"
 local manager = {}
 
@@ -40,7 +44,7 @@ function hero_meta:drown()
   local hero = self
   hero:freeze()
   sol.audio.play_sound"swim"
-  hero:set_animation("plunging_water", function()
+  hero:set_animation("drowning_water", function()
     sol.audio.play_sound"splash"
     hero:set_position(hero:get_solid_ground_position())
     hero:set_visible()
@@ -69,7 +73,8 @@ blob:set_animation"blob"
 local ring = sol.sprite.create("hud/swim_meter")
 ring:set_animation"ring"
 local icon_surface = sol.surface.create(ICON_SIZE, ICON_SIZE)
-
+local shadow = sol.sprite.create("hud/swim_meter")
+shadow:set_animation"shadow"
 
 function menu:on_started()
   local hero = sol.main.get_game():get_hero()
@@ -102,6 +107,7 @@ function menu:on_draw(dst)
   local hx, hy, hz = hero:get_position()
   local cx, cy, cz = camera:get_position()
   icon_surface:clear()
+  shadow:draw(icon_surface)
   blob:draw_region(0, ICON_SIZE - (menu.blob_height or ICON_SIZE), ICON_SIZE, ICON_SIZE, icon_surface)
   ring:draw(icon_surface)
   icon_surface:draw(dst, hx - cx + 8, hy - cy - 32)

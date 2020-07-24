@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 416,
-  height = 240,
+  height = 480,
   min_layer = 0,
   max_layer = 2,
   tileset = "oceanset_outside",
@@ -14,6 +14,33 @@ tile{
   y = 0,
   width = 416,
   height = 240,
+  pattern = "grass_light",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 128,
+  width = 128,
+  height = 352,
+  pattern = "shallow_water",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 240,
+  width = 128,
+  height = 240,
+  pattern = "grass_light",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 240,
+  width = 112,
+  height = 96,
   pattern = "grass_light",
 }
 
@@ -54,24 +81,6 @@ tile{
   width = 256,
   height = 160,
   pattern = "water",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 128,
-  width = 128,
-  height = 112,
-  pattern = "shallow_water",
-}
-
-tile{
-  layer = 0,
-  x = 248,
-  y = 128,
-  width = 8,
-  height = 112,
-  pattern = "shallow_water_edge_3",
 }
 
 tile{
@@ -329,16 +338,6 @@ tile{
 
 tile{
   layer = 0,
-  x = -24,
-  y = 224,
-  width = 32,
-  height = 24,
-  pattern = "7",
-  tileset = "oceanset_trees",
-}
-
-tile{
-  layer = 0,
   x = 24,
   y = 248,
   width = 32,
@@ -385,6 +384,359 @@ tile{
   height = 48,
   pattern = "4_2",
   tileset = "grass_green_large",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 112,
+  height = 80,
+  pattern = "shallow_water",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "shallow_water",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 240,
+  width = 144,
+  height = 240,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 128,
+  width = 8,
+  height = 352,
+  pattern = "shallow_water_edge_3",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 432,
+  width = 112,
+  height = 48,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 240,
+  width = 8,
+  height = 192,
+  pattern = "shallow_water_edge_2",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 432,
+  width = 112,
+  height = 8,
+  pattern = "shallow_water_edge_4",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 336,
+  width = 80,
+  height = 16,
+  pattern = "grass_light",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 232,
+  width = 112,
+  height = 8,
+  pattern = "grass_light_edge_2",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 240,
+  width = 8,
+  height = 96,
+  pattern = "grass_light_edge_4",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 336,
+  width = 24,
+  height = 8,
+  pattern = "grass_light_edge_6",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "grass_light_edge_4",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 80,
+  height = 8,
+  pattern = "grass_light_edge_6",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "grass_light_edge_3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "grass_light_edge_9",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "grass_light_edge_5",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "grass_light_edge_5",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 224,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 312,
+  width = 48,
+  height = 32,
+  pattern = "5",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 304,
+  width = 48,
+  height = 32,
+  pattern = "5",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "5",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 368,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 416,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 384,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 304,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 336,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 448,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 416,
+  width = 32,
+  height = 24,
+  pattern = "7",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "wave",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "wave",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "wave",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "wave",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "wave",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "wave_2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "wave_2",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "wave_2",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "wave_2",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "wave_2",
 }
 
 custom_entity{
@@ -1154,6 +1506,16 @@ destination{
   direction = 1,
 }
 
+jumper{
+  layer = 0,
+  x = 152,
+  y = 96,
+  width = 96,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
 tile{
   layer = 1,
   x = 136,
@@ -1486,6 +1848,206 @@ tile{
   layer = 1,
   x = 272,
   y = 224,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 296,
+  width = 96,
+  height = 64,
+  pattern = "2",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 248,
+  width = 80,
+  height = 80,
+  pattern = "3",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 288,
+  width = 96,
+  height = 64,
+  pattern = "2",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 240,
+  width = 80,
+  height = 80,
+  pattern = "3",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 336,
+  width = 96,
+  height = 64,
+  pattern = "2",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 288,
+  width = 80,
+  height = 80,
+  pattern = "3",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 352,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 320,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 384,
+  width = 96,
+  height = 64,
+  pattern = "2",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 368,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 352,
+  width = 96,
+  height = 64,
+  pattern = "2",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 336,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 288,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 256,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 320,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 288,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 432,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 400,
+  width = 64,
+  height = 56,
+  pattern = "4",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 400,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 368,
   width = 64,
   height = 56,
   pattern = "4",
