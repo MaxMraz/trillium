@@ -43,6 +43,7 @@ sprite{ id = "enemies/goblin_green", description = "Goblin Green" }
 sprite{ id = "enemies/goblin_green_slingshot", description = "Goblin Slingshot" }
 sprite{ id = "enemies/ice_block", description = "Ice block" }
 sprite{ id = "enemies/iceball", description = "Iceball" }
+sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
 sprite{ id = "enemies/pterobat", description = "Pterobat" }
 sprite{ id = "enemies/shamablin_fire", description = "Goblin Shaman Fire" }
 sprite{ id = "enemies/skelfos", description = "Skelfos" }
@@ -258,6 +259,7 @@ enemy{ id = "flame", description = "Flame" }
 enemy{ id = "generic_projectile", description = "Projectile" }
 enemy{ id = "goblin_green", description = "Goblin" }
 enemy{ id = "iceball", description = "Iceball" }
+enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red" }
 enemy{ id = "pterobat", description = "Pterobat" }
 enemy{ id = "shamablin_fire", description = "Goblin Shaman Fire" }
 enemy{ id = "skelfos", description = "Skelfos" }

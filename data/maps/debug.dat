@@ -1652,6 +1652,70 @@ custom_entity{
   model = "foliage",
 }
 
+enemy{
+  layer = 0,
+  x = 264,
+  y = 221,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 197,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 224,
+  y = 173,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 181,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 312,
+  y = 221,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 64,
+  y = 221,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 48,
+  y = 213,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 221,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
 tile{
   layer = 1,
   x = 144,

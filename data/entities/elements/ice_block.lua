@@ -11,26 +11,9 @@ function entity:on_created()
   entity:set_size(16, 16)
 
   entity:set_traversable_by("hero", true)
-  entity:solidify()
+  entity:set_traversable_by("enemy", true)
+  require("scripts/misc/solidify"):solidify(entity)
 
-end
-
-
-function entity:solidify()
-  sol.timer.start(entity, 10, function()
-    if not entity:overlaps(map:get_hero()) then
-      entity:set_traversable_by("hero", false)
-    else return true
-    end
-  end)
-
-  sol.timer.start(entity, 40, function()
-    local overlaps = false
-    for e in map:get_entities_by_type("enemy") do
-      if entity:overlaps(e) then overlaps = true end
-    end
-    if not overlaps then entity:set_traversable_by("enemy", false) end
-  end)
 end
 
 
