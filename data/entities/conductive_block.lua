@@ -8,6 +8,9 @@ function entity:on_created()
   entity.can_conduct_electricity = true
   entity:set_drawn_in_y_order(true)
   entity:set_traversable_by(false)
+  entity:set_traversable_by("hero", entity.overlaps)
+  entity:set_traversable_by("enemy", entity.overlaps)
+
   entity:set_follow_streams(true)
   entity:set_size(16, 16)
   entity:set_weight(0)

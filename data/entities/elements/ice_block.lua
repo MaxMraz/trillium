@@ -10,9 +10,9 @@ function entity:on_created()
   entity:set_follow_streams(true)
   entity:set_size(16, 16)
 
-  entity:set_traversable_by("hero", true)
-  entity:set_traversable_by("enemy", true)
-  require("scripts/misc/solidify"):solidify(entity)
+  entity:set_traversable_by(false)
+  entity:set_traversable_by("hero", entity.overlaps)
+  entity:set_traversable_by("enemy", entity.overlaps)
 
 end
 
