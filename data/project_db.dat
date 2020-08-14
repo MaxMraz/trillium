@@ -4,6 +4,7 @@ map{ id = "climbing" }
 map{ id = "debug", description = "debug" }
 map{ id = "tests" }
 map{ id = "water" }
+map{ id = "yorder" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }

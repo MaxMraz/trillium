@@ -1,5 +1,23 @@
 --Requires multi_events
 
+
+
+
+
+
+
+
+
+
+
+--TODO
+-- Draw the menu onto an intermediary surface, and scroll it beyond the limits of that surface
+--See 
+
+
+
+
+
 local builder = {}
 
 local cursor_sprite = sol.sprite.create("menus/inventory/selector")
@@ -14,7 +32,7 @@ function builder:build(props)
 	local num_columns = props.num_columns or 5
 	local spacing = props.spacing or 32
 	local menu_width = props.menu_width or (num_columns * spacing)
-	local menu_height = props.menu_height or 200
+	local menu_height = props.menu_height or (num_rows * spacing)
 	local menu_x = props.menu_x or (416 - menu_width) / 2 --hardcoded 416 as the game width
 	local menu_y = props.menu_y or 40
 
