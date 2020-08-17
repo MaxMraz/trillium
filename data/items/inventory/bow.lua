@@ -1,6 +1,8 @@
 local item = ...
 local game = item:get_game()
 
+local SPEED_DELTA = 40
+
 function item:on_started()
   item:set_savegame_variable("possession_bow")
   item:set_assignable(true)
@@ -15,12 +17,14 @@ function item:on_using(props)
   hero:set_animation("bow_draw", function()
     hero:set_animation"bow_drawn"
     hero:start_state(item:get_bow_state())
+    hero:set_walking_speed(hero:get_walking_speed() - SPEED_DELTA)
     sol.timer.start(hero,10,function()
       if game:is_command_pressed("item_" .. slot_assigned) then
         return true
       else
         item:fire(arrow_type)
         hero:set_animation("bow_fire", function()
+          hero:set_walking_speed(hero:get_walking_speed() + SPEED_DELTA)
           hero:unfreeze()
           item:set_finished()
         end)
