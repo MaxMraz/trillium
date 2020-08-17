@@ -20,6 +20,7 @@ sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/bush2", description = "bush2" }
 sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
+sprite{ id = "destructibles/pot", description = "Pot" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
@@ -277,7 +278,6 @@ enemy{ id = "slime_red", description = "Slime (red)" }
 enemy{ id = "slime_yellow", description = "Slime (yellow)" }
 enemy{ id = "slimy_green", description = "Slimy Green" }
 
-entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_player" }
 entity{ id = "climbing_wall", description = "Climbing Wall" }
 entity{ id = "conductive_block", description = "Conductive Block" }
@@ -507,6 +507,7 @@ file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush2.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush_brambles.dat", author = "Max Mraz", license = "CC-BA-SA 4.0" }
+file{ path = "sprites/destructibles/pot.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }

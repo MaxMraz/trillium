@@ -40,7 +40,7 @@ function initial_game:initialize_new_savegame(game)
   game:get_item("inventory/bow_ice"):set_variant(1)
   game:get_item("inventory/bow_electric"):set_variant(1)
   game:get_item("inventory/bow_bomb"):set_variant(1)
-  game:set_item_assigned(1, game:get_item("inventory/flame_spell"))
+  game:set_item_assigned(1, game:get_item("inventory/bow"))
   game:set_item_assigned(2, game:get_item("inventory/feather"))
 
 end

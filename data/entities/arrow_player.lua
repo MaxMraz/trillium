@@ -8,6 +8,7 @@ function entity:on_created()
   entity:set_can_traverse("hero", true)
   entity:set_can_traverse("crystal", true)
   entity:set_can_traverse("crystal_block", true)
+  entity:set_can_traverse("destructible", true)
   entity:set_can_traverse("jumper", true)
   entity:set_can_traverse("stairs", false)
   entity:set_can_traverse("stream", true)
@@ -90,11 +91,21 @@ end
 
 entity:add_collision_test("sprite", function(entity, other_entity, sprite, other_sprite)
   --TODO hurt enemies
+
+  local type = other_entity:get_type()
+  print("type: ", type, "sprite: ", other_entity:get_sprite():get_animation_set())
+
+  if type == "destructible" and other_entity:get_sprite():get_animation_set() == "destructibles/pot" then
+    print"BREAK POT"
+    entity:break_pot(other_entity)
+  end
+
 end)
 
 
 entity:add_collision_test("overlapping", function(entity, other_entity)
   local type = other_entity:get_type()
+
   if type == "crystal" then
     entity:get_movement():on_obstacle_reached()
     sol.audio.play_sound("switch")
@@ -116,7 +127,21 @@ entity:add_collision_test("overlapping", function(entity, other_entity)
     entity:clear_collision_tests()
 
   end
-
 end)
 
+
+--Break pots
+function entity:break_pot(other_entity)
+    print"yow pow pow"
+    if other_entity:get_destruction_sound() then sol.audio.play_sound(other_entity:get_destruction_sound()) end
+    other_entity:get_sprite():set_animation("destroy", function() entity:remove() other_entity:remove() end)
+    local treasure = other_entity:get_treasure()
+    if treasure then
+      local x,y,z = other_entity:get_position()
+      map:create_pickable{
+        x=x, y=y, layer=z, treasure_name = treasure,
+      }
+    end
+    entity:clear_collision_tests()
+end
 
