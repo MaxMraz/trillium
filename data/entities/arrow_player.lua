@@ -132,8 +132,8 @@ end)
 
 --Break pots
 function entity:break_pot(other_entity)
-    print"yow pow pow"
-    if other_entity:get_destruction_sound() then sol.audio.play_sound(other_entity:get_destruction_sound()) end
+    print"yow pow pow breaking a pot"
+--    if other_entity:get_destruction_sound() then sol.audio.play_sound(other_entity:get_destruction_sound()) end
     other_entity:get_sprite():set_animation("destroy", function() entity:remove() other_entity:remove() end)
     local treasure = other_entity:get_treasure()
     if treasure then
