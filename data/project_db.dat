@@ -2,10 +2,9 @@ map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "climbing" }
 map{ id = "debug", description = "debug" }
-map{ id = "desert" }
+map{ id = "desert", description = "desert" }
 map{ id = "tests" }
 map{ id = "water" }
-map{ id = "yorder" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "oceanset_desert", description = "Desert" }
@@ -686,7 +685,6 @@ file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", licen
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/teletransporters", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "tilesets/oceanset_desert.entities.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.tiles.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
