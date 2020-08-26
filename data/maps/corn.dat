@@ -1,0 +1,400 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "grass_light",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 192,
+  height = 32,
+  pattern = "13",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 48,
+  width = 192,
+  height = 16,
+  pattern = "12",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 192,
+  height = 16,
+  pattern = "18",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "14",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 64,
+  width = 8,
+  height = 176,
+  pattern = "140",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 64,
+  width = 320,
+  height = 176,
+  pattern = "138",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 240,
+  width = 320,
+  height = 8,
+  pattern = "139",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 56,
+  width = 320,
+  height = 8,
+  pattern = "142",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 64,
+  width = 8,
+  height = 176,
+  pattern = "141",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 64,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 213,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+

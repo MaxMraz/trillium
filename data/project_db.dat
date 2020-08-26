@@ -1,6 +1,7 @@
 map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "climbing" }
+map{ id = "corn" }
 map{ id = "debug", description = "debug" }
 map{ id = "desert", description = "desert" }
 map{ id = "tests" }
@@ -85,6 +86,7 @@ sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "foliage/barley", description = "Barley" }
 sprite{ id = "foliage/barley_dark", description = "Barley-Dark" }
+sprite{ id = "foliage/corn", description = "Corn" }
 sprite{ id = "foliage/fern_big", description = "Fern-Big" }
 sprite{ id = "foliage/generic" }
 sprite{ id = "foliage/grass_seed_short", description = "Grass Seed Short" }
@@ -496,7 +498,6 @@ file{ path = "sounds/world_warp.ogg", author = "Diarandor", license = "CC BY-SA 
 file{ path = "sounds/wrong.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/wrong2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/wrong3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/animals", license = "CC BY-SA 4.0" }
 file{ path = "sprites/blocks/cracked_block.dat", author = "Max Mraz", }
 file{ path = "sprites/chests", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/chest.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -600,6 +601,7 @@ file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/barley_dark.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/corn.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/fern_big.dat", author = "Max Mraz", license = "CC-BY 4.0" }
 file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/hookseed.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -661,7 +663,6 @@ file{ path = "sprites/hud/magic_bar.dat", author = "Max Mraz", license = "CC-BY-
 file{ path = "sprites/hud/magic_bar.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/magic_bar_background.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/swim_meter.dat", author = "Max Mraz", license = "CC-BY 4.0" }
-file{ path = "sprites/items", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
@@ -673,17 +674,14 @@ file{ path = "sprites/menus/solarus_logo.png", author = "Olivier Cléro", licens
 file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
-file{ path = "sprites/npc", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow_big.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow_big_dynamic.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow_small.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/streams", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/teletransporters", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
