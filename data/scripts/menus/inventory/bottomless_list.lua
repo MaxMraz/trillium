@@ -41,8 +41,9 @@ function builder:build(props)
 	local menu_y = props.menu_y or 40
   local hide_0_amount_items = props.hide_0_amount_items or false
   local menu_background_color = {100,100,100}
+  local padding = 4 --pixels the scrolling surface is set within the stationary surface
 
-	local cursor_index = 0
+	menu.cursor_index = 0
   menu.scroll_steps = 0
 
   --Enable multi_events for the menu so on_started can be defined differently for each instance
@@ -81,6 +82,8 @@ function builder:build(props)
     --Make a surface for all held items, we'll scroll this surface
     local menu_draw_height = math.max(spacing, math.ceil(#menu.held_items / num_columns) * spacing)
   	menu.items_surface = sol.surface.create(menu_width, menu_draw_height)
+    --Set to 0 offset initially
+    menu.items_surface.current_y = 0
 
     --Draw items onto items_surface
   	menu.items_surface:clear()
@@ -89,29 +92,18 @@ function builder:build(props)
   		item.sprite:draw(menu.items_surface, item.index_x * spacing + (spacing/2), item.index_y * spacing + spacing/2)
   	end
 
-    --Then make a surface to draw the items surface on
-    menu.menu_surface = sol.surface.create(menu_width, menu_height)
+    --Then make a surface to draw the items surface on, which won't scroll
+    menu.menu_surface = sol.surface.create(menu_width + padding, menu_height + padding)
     menu.menu_surface:fill_color(menu_background_color)
 
     --Note current highest and lowest indexes, to scroll if exceeded
     menu.current_lowest_index = 0
     menu.current_highest_index = num_rows * num_columns - 1
 
-  end)
+    --Reset cursor position
+    menu.cursor_index = 0
+    menu:calculate_cursor_position()
 
-
-  menu:register_event("on_draw", function(self, dst)
-    menu.menu_surface:clear()
-
-  	cursor_sprite:draw(
-  		menu.menu_surface,
-  		cursor_index % num_columns * spacing,
-  		math.floor(cursor_index / num_columns) * spacing - 4
-		)
-
-  	menu.items_surface:draw(menu.menu_surface, 0, (menu.scroll_steps or 0) * spacing)
-
-    menu.menu_surface:draw(dst, menu_x, menu_y)
   end)
 
 
@@ -122,42 +114,71 @@ function builder:build(props)
   end
 
   function menu:scroll_up()
-    menu.scroll_steps = (menu.scroll_steps or 0) + 1
+    menu.scroll_steps = (menu.scroll_steps or 0) - 1
     if menu.scroll_steps < 0 then menu.scroll_steps = 0 end
     menu.current_highest_index = menu.current_highest_index - num_columns
     menu.current_lowest_index = menu.current_lowest_index - num_columns    
   end
 
 
-  function menu:on_command_pressed(cmd)
+  menu:register_event("on_command_pressed", function(self, cmd)
   	local handled = false
 
   	if cmd == "right" then
-  		cursor_index = cursor_index + 1
+  		menu.cursor_index = menu.cursor_index + 1
   		handled = true
 
   	elseif cmd == "left" then
-  		cursor_index = cursor_index - 1
+  		menu.cursor_index = menu.cursor_index - 1
   		handled = true
 
   	elseif cmd == "down" then
-  		cursor_index = cursor_index + num_columns
+  		menu.cursor_index = menu.cursor_index + num_columns
   		handled = true
 
   	elseif cmd == "up" then
-  		cursor_index = cursor_index - num_columns
+  		menu.cursor_index = menu.cursor_index - num_columns
   		handled = true
 
   	end
 
-  	if cursor_index < 0 then cursor_index = 0 end
-  	if cursor_index > #menu.held_items - 1 then cursor_index = #menu.held_items - 1 end
+  	if menu.cursor_index < 0 then menu.cursor_index = 0 end
+  	if menu.cursor_index > #menu.held_items - 1 then menu.cursor_index = #menu.held_items - 1 end
 
-    if cursor_index > menu.current_highest_index then menu:scroll_down() end
-    if cursor_index < menu.current_lowest_index then menu:scroll_up() end
+    if menu.cursor_index > menu.current_highest_index then menu:scroll_down() end
+    if menu.cursor_index < menu.current_lowest_index then menu:scroll_up() end
+
+    menu:calculate_cursor_position()
 
   	return handled
+  end)
+
+  function menu:calculate_cursor_position()
+    cursor_sprite.x = menu.cursor_index % num_columns * spacing
+    cursor_sprite.y = menu.cursor_index - menu.current_lowest_index
+    cursor_sprite.y = (math.floor(menu.cursor_index / num_columns) - math.floor(menu.current_lowest_index / num_columns)) * spacing - 4
   end
+
+
+
+
+  menu:register_event("on_draw", function(self, dst)
+    menu.menu_surface:clear()
+
+    --Scrolling
+    local target_y = 0 - (menu.scroll_steps or 0) * spacing
+    if menu.items_surface.current_y < target_y then
+      menu.items_surface.current_y = menu.items_surface.current_y + spacing / 4
+    elseif menu.items_surface.current_y > target_y then
+      menu.items_surface.current_y = menu.items_surface.current_y - spacing / 4
+    end
+
+  	cursor_sprite:draw(menu.menu_surface, cursor_sprite.x + padding, cursor_sprite.y + padding)
+
+  	menu.items_surface:draw(menu.menu_surface, padding, menu.items_surface.current_y + padding)
+
+    menu.menu_surface:draw(dst, menu_x, menu_y)
+  end)
 
 
   return menu
