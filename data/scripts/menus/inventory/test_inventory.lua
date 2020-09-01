@@ -13,25 +13,11 @@ local possible_items = {
   "inventory/bow_ice",
   "inventory/bow_electric",
   "inventory/bow_bomb",
-  "inventory/flame_spell",
-  "inventory/spark_spell",
-  "inventory/frostseed_satchel",
-  "inventory/hookseed_satchel",
-  "inventory/feather",
-  "inventory/metal_block_cane",
-  "inventory/hookshot",
-  "inventory/boomerang",
-  "inventory/bombs_counter",
-  "inventory/bow",
-  "inventory/bow_fire",
-  "inventory/bow_ice",
-  "inventory/bow_electric",
-  "inventory/bow_bomb",
 }
 
 local menu = require("scripts/menus/inventory/bottomless_list"):build{
   all_items = possible_items,
-  num_columns = 5,
+  num_columns = 3,
   num_rows = 4,
 }
 

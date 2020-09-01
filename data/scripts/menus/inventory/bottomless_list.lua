@@ -38,7 +38,7 @@ function builder:build(props)
 	local menu_width = props.menu_width or (num_columns * spacing)
 	local menu_height = props.menu_height or (num_rows * spacing)
 	local menu_x = props.menu_x or (screen_width - menu_width) / 2 
-	local menu_y = props.menu_y or 40
+	local menu_y = props.menu_y or (screen_height - menu_height) / 2
   local hide_0_amount_items = props.hide_0_amount_items or false
   local menu_background_color = {100,100,100}
   local padding = 4 --pixels the scrolling surface is set within the stationary surface
