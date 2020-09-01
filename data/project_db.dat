@@ -8,6 +8,7 @@ map{ id = "tests" }
 map{ id = "water" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
+tileset{ id = "halloween", description = "halloween" }
 tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
@@ -93,6 +94,7 @@ sprite{ id = "foliage/grass_seed_short", description = "Grass Seed Short" }
 sprite{ id = "foliage/hookseed", description = "Hookseed" }
 sprite{ id = "foliage/leaf_burst", description = "Leaf Burst" }
 sprite{ id = "foliage/nettle_short", description = "Nettle-Short" }
+sprite{ id = "foliage/pumpkin_leaves", description = "Pumpkin Leaves" }
 sprite{ id = "foliage/sprig", description = "sprig" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
@@ -607,6 +609,7 @@ file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", licens
 file{ path = "sprites/foliage/hookseed.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/leaf_burst.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/nettle_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/pumpkin_leaves.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/sprig.dat", author = "Max Mraz", }
 file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
