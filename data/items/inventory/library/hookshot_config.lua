@@ -24,6 +24,8 @@ local config = {
   hookable_by_animation_set = {
     ["destructible"] =
       {
+        "destructibles/pumpkin_small", 
+        "destructibles/pumpkin_big", 
         "destructibles/sign_dark", 
         "destructibles/sign",
         "destructibles/stone_small_dw_1",
