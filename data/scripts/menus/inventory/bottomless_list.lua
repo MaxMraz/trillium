@@ -1,20 +1,32 @@
---Requires multi_events
---Note: only supports a square grid of items, vert and horizontal spacing are equal
+--[[
+By Max Mraz
+Requires multi_events
+Note: only supports a square grid of items, vert and horizontal spacing are equal
 
+Example Usage:
+When creating a menu that uses this script, call it like this:
 
+local possible_items = {
+  "shield",
+  "feather",
+  "inventory/flame_spell",
+  "inventory/spark_spell",
+}
 
+local menu = require("scripts/menus/inventory/bottomless_list"):build{
+  all_items = possible_items,
+  num_columns = 5,
+  num_rows = 4,
+}
 
+menu:register_event("on_command_pressed", function(self, cmd)
+  if cmd == "item_1" then
+    local item = menu.held_items[menu.cursor_index + 1].item
+    game:set_item_assigned(1, item) 
+  end
+end)
 
-
-
-
-
-
---TODO
--- Draw the menu onto an intermediary surface, and scroll it beyond the limits of that surface
---See 
-
-
+--]]
 
 
 
