@@ -1,14 +1,12 @@
 map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "climbing" }
-map{ id = "corn" }
 map{ id = "debug", description = "debug" }
 map{ id = "desert", description = "desert" }
 map{ id = "tests" }
 map{ id = "water" }
 
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
-tileset{ id = "halloween", description = "Halloween" }
 tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
@@ -22,8 +20,6 @@ sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/bush2", description = "bush2" }
 sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
 sprite{ id = "destructibles/pot", description = "Pot" }
-sprite{ id = "destructibles/pumpkin_big", description = "Pumpkin - Big" }
-sprite{ id = "destructibles/pumpkin_small", description = "Pumpkin - Small" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
@@ -512,8 +508,6 @@ file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "C
 file{ path = "sprites/destructibles/bush2.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush_brambles.dat", author = "Max Mraz", license = "CC-BA-SA 4.0" }
 file{ path = "sprites/destructibles/pot.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/destructibles/pumpkin_big.dat", author = "Max Mraz", license = "All Rights Reserved" }
-file{ path = "sprites/destructibles/pumpkin_small.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
@@ -689,7 +683,6 @@ file{ path = "sprites/shadows/shadow_small.dat", author = "Diarandor", license =
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "tilesets/halloween.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "tilesets/oceanset_desert.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }

@@ -96,6 +96,7 @@ function builder:build(props)
   	menu.items_surface = sol.surface.create(menu_width, menu_draw_height)
     --Set to 0 offset initially
     menu.items_surface.current_y = 0
+    menu.scroll_steps = 0
 
     --Draw items onto items_surface
   	menu.items_surface:clear()
