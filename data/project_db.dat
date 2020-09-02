@@ -1,4 +1,3 @@
-map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "climbing" }
 map{ id = "debug", description = "debug" }
