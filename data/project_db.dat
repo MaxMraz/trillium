@@ -5,11 +5,13 @@ map{ id = "desert", description = "desert" }
 map{ id = "tests" }
 map{ id = "water" }
 
+tileset{ id = "flintneedle", description = "Flintneedle" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
+tileset{ id = "tundra", description = "Tundra" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "blocks/cracked_block", description = "cracked block" }

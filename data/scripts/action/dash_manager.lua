@@ -91,38 +91,37 @@ end
 
 
 function dash_manager:generate_moths(game)
-    local map = game:get_map()
-    local hero = game:get_hero()
-    local n = 0
-    local x, y, layer = hero:get_position()
-    local burst = map:create_custom_entity{
-        name = "dandelion_burst",
-        direction = hero:get_direction(),
-        layer = layer,
+  local map = game:get_map()
+  local hero = game:get_hero()
+  dash_manager.seeds = {}
+  local n = 0
+  sol.timer.start(map, math.random(10,30), function()
+    local x, y, layer = game:get_hero():get_position()
+    local sprite = sol.sprite.create"entities/dandelion_seed"
+    dash_manager.seeds[sprite] = {
         x = x,
         y = y,
-        width = 32,
-        height = 32,
-        sprite = "entities/dandelion_burst",
-        model = "dash_moth"
     }
-    sol.timer.start(map, math.random(10,35), function()
-        x, y, layer = game:get_hero():get_position()
-        local moth = map:create_custom_entity{
-        name = "dandelion_dash_seed",
-        direction = hero:get_direction(),
-        layer = layer,
-        x = math.random(x-8, x+8),
-        y = math.random(y-8, y+8),
-        width = 8,
-        height = 8,
-        sprite = "entities/dandelion_seed",
-        model = "dash_moth"
-        }
-        moth:set_drawn_in_y_order(true)
-        n = n + 1
-        if n <= MAX_MOTHS then return true end
-    end)
+    local m = sol.movement.create"random"
+--    m:set_speed(80)
+    m:start(dash_manager.seeds[sprite])
+    sprite:set_animation("fade_out", function() dash_manager.seeds[sprite] = nil end)
+    n = n + 1
+    if n <= MAX_MOTHS then
+      return true
+    end
+  end)
+  --Moths return to Tilia as she stops dashing
+  sol.timer.start(map, 240, function()
+      for _, seed in pairs(dash_manager.seeds) do
+        local m = sol.movement.create"target"
+        m:set_target(hero:get_position())
+        m:set_speed(200)
+        m:start(seed)
+      end
+  end)
+
+
 end
 
 return dash_manager
