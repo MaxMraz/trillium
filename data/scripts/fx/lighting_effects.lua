@@ -12,6 +12,45 @@ local shadow_surface
 local light_surface
 local darkness_color
 
+--Allow to give preset darkness levels / colors
+function get_darkness_color_from_level(level)
+  local color
+  if level == 1 then
+    color = {150,180,200}
+  elseif level == 2 then
+    color = {100,115,135}
+  elseif level == 3 then
+    color = {75,85,90}
+  elseif level == 4 then
+    color = {20,40,55}
+  elseif level == 5 then
+    color = {5, 15, 25}
+  elseif level == "day" then
+    color = {255,250,245}
+  elseif level == "evening" then
+    color = {240,230,180}
+  elseif level == "sunset" then
+    color = {255,200,130}
+  elseif level == "dusk" then
+    color = {170,160,140}
+  elseif level == "night" then
+    color = {100,115,135}
+  elseif level == "dawn" then
+    color = {200,200,255}
+  elseif level == "morning" then
+    color = {240,240,255}
+  elseif level == "misty_forest" then
+    color = {160,190,220}
+  elseif level == "haunted_house" then
+    color = {180,170,140}
+  else
+    color = level
+  end
+
+  return color
+end
+
+
 
 function lighting_effects:initialize()
   --scale effects to proper size:
@@ -22,7 +61,7 @@ function lighting_effects:initialize()
   --add color to effects
   effects.torch:set_color_modulation{255, 230, 150}
   effects.candle:set_color_modulation{255, 230, 130}
-  effects.hero_aura:set_color_modulation{255, 230, 180}
+  effects.hero_aura:set_color_modulation{215, 190, 140}
   effects.lantern:set_color_modulation{230, 210, 240}
   effects.explosion:set_color_modulation{255, 240, 180}
 
@@ -38,63 +77,41 @@ function lighting_effects:initialize()
   light_surface:set_blend_mode"add"
 
   --set default darkness level
-  darkness_color = {70,90,100}
+  --darkness_color = {70,90,100}
+  darkness_color = {255,255,255}
+
 end
 
 
 function lighting_effects:set_darkness_level(level)
-  if level == 1 then
-    darkness_color = {150,180,200}
-  elseif level == 2 then
-    darkness_color = {100,115,135}
-  elseif level == 3 then
-    darkness_color = {75,85,90}
-  elseif level == 4 then
-    darkness_color = {20,40,55}
-  elseif level == 5 then
-    darkness_color = {5, 15, 25}
-  elseif level == "dusk" then
-    darkness_color = {240,229,210}
-  elseif level == "night" then
-    darkness_color = {100,115,135}
-  else
-    darkness_color = level
-  end
+  --Always fade to new level. This function just sets hero lighting aura also. Could combine these.
+  lighting_effects:fade_to_darkness_level(level)
+
+  darkness_color = get_darkness_color_from_level(level)
+  local light_sum = darkness_color[1] + darkness_color[2] + darkness_color[3]
+  local hero = sol.main.get_game():get_hero()
+  if light_sum <= 450 then hero.lighting_aura = true
+  else hero.lighting_aura = false end
+
 end
 
-function lighting_effects:fade_to_darkness_level(level)
+function lighting_effects:fade_to_darkness_level(level, fade_speed)
   if lighting_effects.color_fade_timer then lighting_effects.color_fade_timer:stop() end
-  if level == 1 then
-    new_darkness_color = {150,180,200}
-  elseif level == 2 then
-    new_darkness_color = {100,115,135}
-  elseif level == 3 then
-    new_darkness_color = {75,85,90}
-  elseif level == 4 then
-    new_darkness_color = {20,40,55}
-  elseif level == 5 then
-    new_darkness_color = {5, 15, 25}
-  elseif level == "dusk" then
-    new_darkness_color = {240,229,210}
-  elseif level == "night" then
-    new_darkness_color = {100,115,135}
-  else
-    new_darkness_color = level
-  end
+  new_darkness_color = get_darkness_color_from_level(level)
 
   local r1, g1, b1 = darkness_color[1], darkness_color[2], darkness_color[3]
   local r2, g2, b2 = new_darkness_color[1], new_darkness_color[2], new_darkness_color[3]
 
-  lighting_effects.color_fade_timer = sol.timer.start(sol.main.get_game(), 10, function()
+  lighting_effects.color_fade_timer = sol.timer.start(sol.main.get_game(), fade_speeed or 10, function()
     local r_step = 1
     local g_step = 1
     local b_step = 1
-    if math.abs(r1-r2) > 10 then r_step = 5 end
-    if math.abs(g1-g2) > 10 then g_step = 5 end
-    if math.abs(b1-b2) > 10 then b_step = 5 end
+    if math.abs(r1-r2) >= 10 then r_step = 5 end
+    if math.abs(g1-g2) >= 10 then g_step = 5 end
+    if math.abs(b1-b2) >= 10 then b_step = 5 end
     if r1 > r2 then r_step = r_step * -1 elseif r1 == r2 then r_step = 0 end
-    if r1 > r2 then g_step = g_step * -1 elseif g1 == g2 then g_step = 0 end
-    if r1 > r2 then b_step = b_step * -1 elseif b1 == b2 then b_step = 0 end
+    if g1 > g2 then g_step = g_step * -1 elseif g1 == g2 then g_step = 0 end
+    if b1 > b2 then b_step = b_step * -1 elseif b1 == b2 then b_step = 0 end
     r1 = r1 + r_step
     g1 = g1 + g_step
     b1 = b1 + b_step    
@@ -128,7 +145,7 @@ function lighting_effects:on_draw(dst_surface)
 --=========================================================================================--
   --draw different light effects
   --hero aura:
-  if hero.torch then
+  if hero.lighting_aura then
     effects.hero_aura:draw(light_surface, hx - cam_x, hy - cam_y)
   end
   --torches:
@@ -143,13 +160,6 @@ function lighting_effects:on_draw(dst_surface)
     if e:is_enabled() and e:get_distance(hero) <= 450 then
       local x,y = e:get_center_position()
       effects.candle:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
-  --Lanterns
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_model() == "lantern" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.lantern:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
   --explosions
@@ -173,27 +183,6 @@ function lighting_effects:on_draw(dst_surface)
     end
   end
 
-  --fire arrows
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_model() == "arrow_fire" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.candle:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
-  --iron candles
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_name() == "iron_candle_entity" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.candle:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
-  --lightning
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_name() == "lightning_attack" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.torch:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
   --enemies
   for e in map:get_entities_by_type("enemy") do
     if e:is_enabled() and e.lighting_effect and e:get_distance(hero) <= 450 then
@@ -207,10 +196,21 @@ function lighting_effects:on_draw(dst_surface)
     end
   end
 
+
   
 
   light_surface:draw(shadow_surface)
   shadow_surface:draw(dst_surface)
+end
+
+
+
+function lighting_effects:get_light_surface()
+  return light_surface
+end
+
+function lighting_effects:get_shadow_surface()
+  return shadow_surface
 end
 
 return lighting_effects
