@@ -118,6 +118,7 @@ sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "shadows/shadow_big", description = "Big shadow" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "Big dynamic shadow" }
+sprite{ id = "shadows/shadow_medium", description = "Big shadow" }
 sprite{ id = "shadows/shadow_small", description = "Small shadow" }
 sprite{ id = "switches/lightning_switch", description = "Lightning Switch" }
 sprite{ id = "switches/switch_plate", description = "Switch-Plate" }
@@ -677,10 +678,11 @@ file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license =
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows", license = "CC BY-SA 4.0" }
-file{ path = "sprites/shadows/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/shadows/shadow.png", author = "Max Mraz", license = "CC0" }
 file{ path = "sprites/shadows/shadow_big.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow_big_dynamic.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/shadows/shadow_small.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/shadows/shadow_medium.dat", author = "Max Mraz", license = "CC0" }
+file{ path = "sprites/shadows/shadow_small.dat", author = "Max Mraz", license = "CC0" }
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
