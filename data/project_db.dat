@@ -297,6 +297,7 @@ entity{ id = "foliage", description = "Foliage" }
 entity{ id = "hookseed", description = "Hookseed Plant" }
 entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
+entity{ id = "sentry", description = "Sentry" }
 entity{ id = "toss_ball", description = "Toss Ball" }
 
 language{ id = "en", description = "English" }
@@ -339,6 +340,7 @@ file{ path = "entities/elements/lightning_switch.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_zap.lua", author = "Max Mraz", }
 file{ path = "entities/foliage.lua", author = "Max Mraz", }
 file{ path = "entities/hookseed.lua", author = "Max Mraz", }
+file{ path = "entities/sentry.lua", author = "Max Mraz", }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
 file{ path = "items/inventory/bombs_counter.lua", author = "Max Mraz", }

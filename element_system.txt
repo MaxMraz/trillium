@@ -24,5 +24,7 @@ battery_orb is an entity that can be pushed around, which acts as a source for l
 conductive_blocks are pushable block entities that can conduct electricity. Once block type entities are reliably registered by "sprite" collision tests, it would be better to use a block entity and set a can_conduct_electricity property to true.
 
 
-
+Ice:
+There are several types of ice entity. When created, `ice_sparkle` entities will create an `ice_block` if over land, or `ice_platform` if over water.
+When colliding with an entity, `ice_sparkle`s will call `entity:react_to_ice`.
 
